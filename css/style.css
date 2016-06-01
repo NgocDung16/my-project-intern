@@ -143,10 +143,19 @@ body{
 .detail-img{
 	width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .detail-img img{
 	width: 100%;
 	height: 100%;
+	-webkit-transition-duration: 1s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+}
+.detail-img img:hover{
+	-webkit-transform:scale(1.2); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+	-moz-transform:scale(1.2); 
+	-o-transform:scale(1.2);
 }
 hr{
 	border: 1px solid #ccc;
