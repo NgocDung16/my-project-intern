@@ -134,11 +134,31 @@ body{
 .list-group-item{
 	margin-bottom: 0px;
 }
-.list-group-item:hover{
-	border: 1px solid #F50781;
+.list-group > .item > .active{
+    border: solid 1px #F50781;
+    background: #F50781;
+}
+.list-group > .item > .list-group-item:hover{
+	background-color: #F50781;
+	color: #fff;
 }
 .item{
 	padding-bottom: 20px;
+}
+.products{
+    margin-bottom: 20px;
+}
+.media-middle img{
+	width: 90px;
+	height: 100px;
+}
+.media-body h4{
+	color: #F50781;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.media-body span{
+	font-size: 16px;
 }
 .detail-img{
 	width: 100%;
