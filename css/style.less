@@ -11,16 +11,20 @@ body{
 	background-color: @color-main;
     border-color: @color-main;
     .navbar-brand{
-		color: @color-111;
+        color: @color-111;
 	    text-transform: @upp;
+        &:hover{
+	        background: @color-111;
+			color: @color-white;
+        }
 	}
 	.navbar-nav>li>a{
 		color: @color-111;
 		text-transform: @upp;
-	}
-	.navbar-brand:hover, .navbar-nav>li>a:hover{
-		background: @color-111;
-		color: @color-white;
+        &:hover{
+            background: @color-111;
+            color: @color-white;
+        }
 	}
 	.navbar-toggle:focus, .navbar-toggle:hover, .navbar-nav>.open>a, .navbar-nav>.open>a:focus, .navbar-nav>.open>a:hover{
 		background-color: @color-main;
