@@ -1,19 +1,28 @@
 body {
-  font-family: serif;
-  font-size: 17px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #ffffff;
 }
 /*CSS phan menu*/
 .navbar-inverse {
   background-color: #f50781;
   border-color: #f50781;
+  /*    .navbar-brand{
+            color: @color-111;
+	    text-transform: @upp;
+            &:hover{
+                background: @color-111;
+		color: @color-white;
+            }
+	}*/
 }
-.navbar-inverse .navbar-brand {
-  color: #111111;
-  text-transform: uppercase;
+.navbar-inverse .fix-logo {
+  display: none;
 }
-.navbar-inverse .navbar-brand:hover {
-  background: #111111;
-  color: #ffffff;
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+  margin-top: 15px;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #111111;
@@ -46,6 +55,12 @@ body {
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li a:hover {
     background: #111111;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-inverse .fix-logo {
+    display: inline;
+    margin-left: 15px;
   }
 }
 @media (max-width: 1200px) {
