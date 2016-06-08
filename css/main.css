@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Sofadi+One);
+@import url(http://fonts.googleapis.com/css?family=Elsie);
+/* Set fullscreen */
+html, body {
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* clearfix hack */
+.cf {
+  *zoom: 1; }
+  .cf::after {
+    clear: both; }
+  .cf::before, .cf::after {
+    content: " ";
+    display: table; }
+
+.section-1 {
+  background: url("../images/bg-1.jpg") no-repeat 50% 0 fixed;
+  height: 100%;
+  font-family: 'Sofadi One', cursive; }
+  .section-1 .greeting-content {
+    max-width: 960px;
+    margin: 185px auto;
+    text-align: center; }
+    .section-1 .greeting-content h1, .section-1 .greeting-content h3 {
+      color: #2c3e50;
+      font-size: 3.5em; }
+    .section-1 .greeting-content p {
+      font-size: 2em;
+      background: rgba(231, 76, 60, 0.4);
+      padding: 20px;
+      border-radius: 30px;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px; }
+      .section-1 .greeting-content p a {
+        color: #fff;
+        text-decoration: none; }
+
+.quotes {
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  font-style: italic;
+  color: #fff;
+  width: 500px;
+  margin: 30px;
+  padding: 15px; }
+
+.section-2 {
+  position: relative;
+  height: 800px;
+  background: url("../images/bg-2.jpg") no-repeat 50% 0 fixed;
+  font-family: 'Elsie', cursive;
+  overflow: hidden; }
+  .section-2 #sherlock-img {
+    margin: 0 auto;
+    z-index: 200;
+    position: absolute;
+    right: 50px; }
+  .section-2 .sherlock {
+    background: rgba(192, 57, 43, 0.4);
+    position: absolute;
+    z-index: 100;
+    left: 100px;
+    width: 600px;
+    font-size: 18px; }
+
+.section-3 {
+  position: relative;
+  height: 900px;
+  background: url("../images/bg-3.jpg") no-repeat 50% 0 fixed;
+  font-family: 'Elsie', cursive;
+  overflow: hidden; }
+  .section-3 #steve-img {
+    margin: 0 auto;
+    z-index: 200;
+    position: absolute;
+    right: 0px; }
+  .section-3 .steve {
+    font-size: 1em;
+    background: rgba(44, 62, 80, 0.4);
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    width: 600px;
+    font-size: 20px;}
+.section-3 .home{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.section-3 .test:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+@-webkit-keyframes my {
+   0% { color: #F8CD0A; } 
+   50% { color: #fff;  } 
+   100% { color: #F8CD0A;  } 
+ }
+ @-moz-keyframes my { 
+   0% { color: #F8CD0A;  } 
+   50% { color: #fff;  }
+   100% { color: #F8CD0A;  } 
+ }
+ @-o-keyframes my { 
+   0% { color: #F8CD0A; } 
+   50% { color: #fff; } 
+   100% { color: #F8CD0A;  } 
+ }
+ @keyframes my { 
+   0% { color: #b2b2b2;  } 
+   50% { color: #fff;  }
+   100% { color: #b2b2b2;  } 
+ } 
+ .test {
+    font-size:22;
+    font-weight:bold;
+   -webkit-animation: my 1500ms infinite;
+   -moz-animation: my 1500ms infinite; 
+   -o-animation: my 1500ms infinite; 
+   animation: my 1500ms infinite;
+}

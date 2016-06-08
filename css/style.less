@@ -6,21 +6,21 @@
 body{
 	font-family: 'Roboto Slab',  serif;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 15px;
         background-color: #ffffff;
 }
 /*CSS phan menu*/
 .navbar-inverse{
 	background-color: @color-main;
         border-color: @color-main;
-/*    .navbar-brand{
+    .navbar-brand{
             color: @color-111;
 	    text-transform: @upp;
             &:hover{
                 background: @color-111;
 		color: @color-white;
             }
-	}*/
+	}
         .fix-logo{
             display: none;
         }
@@ -77,6 +77,10 @@ body{
 		display: none;
 	}
 }
+.navbar-form .form-control:hover{
+	-webkit-transition: width 1s ease;
+	width: 160%
+}
 /*end menu*/
 
 /*css phan hien thi san pham*/
@@ -88,7 +92,7 @@ body{
     margin-left: 15px;
     margin-right: 15px;
     h1{
-		font-size: 25px;
+		font-size: 22px;
 	    color: @color-main;
 	    display: inline;
 	}
@@ -144,7 +148,7 @@ body{
 			text-align: center;
 			.name{
 				text-transform: @upp;
-				font-size: 20px;
+				font-size: 17px;
 				color: @color-111;
 				margin-top: 10px;
 				a{

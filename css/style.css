@@ -1,21 +1,21 @@
 body {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #ffffff;
 }
 /*CSS phan menu*/
 .navbar-inverse {
   background-color: #f50781;
   border-color: #f50781;
-  /*    .navbar-brand{
-            color: @color-111;
-	    text-transform: @upp;
-            &:hover{
-                background: @color-111;
-		color: @color-white;
-            }
-	}*/
+}
+.navbar-inverse .navbar-brand {
+  color: #111111;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-brand:hover {
+  background: #111111;
+  color: #ffffff;
 }
 .navbar-inverse .fix-logo {
   display: none;
@@ -73,6 +73,10 @@ body {
     display: none;
   }
 }
+.navbar-form .form-control:hover {
+  -webkit-transition: width 1s ease;
+  width: 160%;
+}
 /*end menu*/
 /*css phan hien thi san pham*/
 .row .title {
@@ -84,7 +88,7 @@ body {
   margin-right: 15px;
 }
 .row .title h1 {
-  font-size: 25px;
+  font-size: 22px;
   color: #f50781;
   display: inline;
 }
@@ -142,7 +146,7 @@ body {
 }
 .spmoi .thumbnail .caption .name {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 17px;
   color: #111111;
   margin-top: 10px;
 }
