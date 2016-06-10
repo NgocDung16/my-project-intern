@@ -1,21 +1,62 @@
 body {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 /*CSS phan menu*/
+.menu-top {
+  background: #111111;
+}
+.menu-top .logo-small {
+  margin-top: 2px;
+  padding-left: 3px;
+  margin-bottom: 1px;
+}
+.menu-top #menu-wrapper {
+  float: right;
+  padding: 0;
+}
+.menu-top #menu-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline;
+}
+.menu-top #menu-wrapper ul li {
+  display: inline;
+  padding: 7px;
+}
+.menu-top #menu-wrapper ul li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.menu-top #menu-wrapper ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .logo-small {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .menu-top #menu-wrapper ul li a {
+    font-size: 9px;
+  }
+}
 .navbar-inverse {
   background-color: #f50781;
   border-color: #f50781;
+  opacity: 0.85;
 }
-.navbar-inverse .navbar-brand {
-  color: #111111;
-  text-transform: uppercase;
-}
-.navbar-inverse .navbar-brand:hover {
-  background: #111111;
-  color: #ffffff;
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #ffffff;
+  color: #f50781;
 }
 .navbar-inverse .fix-logo {
   display: none;
@@ -25,12 +66,12 @@ body {
   margin-top: 15px;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #111111;
+  color: #ffffff;
   text-transform: uppercase;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background: #111111;
-  color: #ffffff;
+  background: #ffffff;
+  color: #f50781;
 }
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover,
@@ -46,8 +87,16 @@ body {
   text-transform: uppercase;
 }
 .navbar-inverse .dropdown-menu > li > a:hover {
-  background: #111111;
-  color: #ffffff;
+  background: #ffffff;
+  color: #f50781;
+}
+.navbar-inverse .search {
+  padding: 10px;
+}
+.navbar-inverse .search form .btn-default {
+  margin-top: 5px;
+  width: 100%;
+  background: rgba(152, 152, 152, 0.43);
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li a {
@@ -67,15 +116,6 @@ body {
   .navbar-right {
     display: none;
   }
-}
-@media (max-width: 990px) {
-  .navbar-form {
-    display: none;
-  }
-}
-.navbar-form .form-control:hover {
-  -webkit-transition: width 1s ease;
-  width: 160%;
 }
 /*end menu*/
 /*css phan hien thi san pham*/
@@ -105,7 +145,7 @@ body {
     font-size: 9px;
   }
 }
-.row .title1 {
+.title1 {
   text-transform: uppercase;
   font-size: 18px;
   border-bottom: 1px solid #f50781;
@@ -142,6 +182,7 @@ body {
   /*Webkit: Tăng kích cỡ ảnh lên 1.2 lần*/
 }
 .spmoi .thumbnail .caption {
+  padding-bottom: 7em;
   text-align: center;
 }
 .spmoi .thumbnail .caption .name {
@@ -171,6 +212,33 @@ body {
 .spmoi .thumbnail:hover {
   border: 1px solid #f50781;
 }
+@media (max-width: 486px) {
+  .spmoi .thumbnail {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 486px) {
+  .spmoi .thumbnail .caption .name {
+    font-size: 13px;
+  }
+  .spmoi .thumbnail .caption .price {
+    font-size: 12px;
+  }
+  .spmoi .thumbnail .caption .price .old-price {
+    font-size: 11px;
+  }
+}
+@media (max-width: 320px) {
+  .spmoi .thumbnail .caption .name {
+    font-size: 9px;
+  }
+  .spmoi .thumbnail .caption .price {
+    font-size: 8px;
+  }
+  .spmoi .thumbnail .caption .price .old-price {
+    font-size: 7px;
+  }
+}
 .muahang {
   border-radius: 0px;
   color: #ffffff;
@@ -181,6 +249,18 @@ body {
 .muahang:hover {
   background: gray;
   color: #ffffff;
+}
+@media (max-width: 486px) {
+  .muahang {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 320px) {
+  .muahang {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
 /*end products*/
 /*css phan sidebar*/
@@ -197,12 +277,21 @@ body {
 .list-group .item .list-group-item {
   margin-bottom: 0px;
 }
+.list-group .item .list-group-item .active,
+.list-group .item .list-group-item .active:focus,
+.list-group .item .list-group-item .active:hover {
+  border: solid 1px #f50781;
+  background: #f50781;
+}
 .list-group .item .list-group-item:hover {
   background-color: #f50781;
   color: #ffffff;
 }
 .list-group .products {
   margin-bottom: 20px;
+  /*.media-heading{
+			margin-bottom: 0;
+		}*/
 }
 .list-group .products .media-middle img {
   width: 90px;
@@ -211,10 +300,11 @@ body {
 .list-group .products .media-body h4 {
   color: #f50781;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 20px;
 }
 .list-group .products .media-body span {
-  font-size: 16px;
+  font-size: 10px;
 }
 /*end css sidebar*/
 hr {

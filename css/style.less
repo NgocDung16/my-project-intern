@@ -3,37 +3,79 @@
 @color-111: #111;
 @color-white: #fff;
 @upp: uppercase;
+
 body{
 	font-family: 'Roboto Slab',  serif;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 14px;
         background-color: #ffffff;
+        text-transform: @upp;
 }
 /*CSS phan menu*/
+.menu-top{
+	background: @color-111;
+	.logo-small{
+		margin-top: 2px;
+	    padding-left: 3px;
+	    margin-bottom: 1px;
+	}
+	#menu-wrapper {
+		float: right;
+	    padding: 0;
+	    ul{
+	    	margin: 0;
+	    	padding: 0;
+	    	list-style-type: none;
+	    	display: inline;
+	    	li{
+				display: inline;
+				padding: 7px;
+				a{
+					font-size: 12px;
+					font-weight: bold;
+					color: @color-white;
+					&:hover{
+					color: @color-white;
+					text-decoration: none;
+				}
+				}
+	    	}
+	    }
+	}
+}
+@media(max-width: 767px){
+	.logo-small{
+		display: none;
+	}
+}
+@media(max-width: 480px){
+	.menu-top #menu-wrapper ul li a{
+		font-size: 9px;
+	}
+}
 .navbar-inverse{
 	background-color: @color-main;
-        border-color: @color-main;
-    .navbar-brand{
-            color: @color-111;
-	    text-transform: @upp;
-            &:hover{
-                background: @color-111;
-		color: @color-white;
-            }
-	}
-        .fix-logo{
-            display: none;
-        }
-        .navbar-toggle{
-            border-color: #fff;
-            margin-top: 15px;
-        }
+    border-color: @color-main;
+    opacity: 0.85;
+    .navbar-nav>.active>a, 
+	.navbar-nav>.active>a:focus, 
+	.navbar-nav>.active>a:hover{
+    	background: @color-white;
+		color: @color-main;
+    }
+    .fix-logo{
+        display: none;
+    }
+    .navbar-toggle{
+        border-color: #fff;
+        margin-top: 15px;
+    }
 	.navbar-nav>li>a{
-		color: @color-111;
+		color: @color-white;
 		text-transform: @upp;
                 &:hover{
-                    background: @color-111;
-                    color: @color-white;
+                    background: @color-white;
+                    color: @color-main;
                 }
 	}
 	.navbar-toggle:focus, .navbar-toggle:hover, .navbar-nav>.open>a, .navbar-nav>.open>a:focus, .navbar-nav>.open>a:hover{
@@ -46,10 +88,24 @@ body{
 		text-transform: @upp;
 	}
 	.dropdown-menu>li>a:hover{
-		background: @color-111;
-		color: @color-white;
+		background: @color-white;
+		color: @color-main;
+	}
+	.search{
+		padding: 10px;
+		form{
+			input{
+
+			}
+			.btn-default{
+				margin-top: 5px;
+				width: 100%;
+				background: rgba(152, 152, 152, 0.43);
+			}
+		}
 	}
 }
+
 @media (max-width: 767px){
 	.navbar-inverse .navbar-nav .open .dropdown-menu>li
 	{
@@ -71,15 +127,6 @@ body{
 	.navbar-right{
 		display: none;
 	}
-}
-@media (max-width: 990px){
-	.navbar-form{
-		display: none;
-	}
-}
-.navbar-form .form-control:hover{
-	-webkit-transition: width 1s ease;
-	width: 160%
 }
 /*end menu*/
 
@@ -112,7 +159,7 @@ body{
 		}
 	}
 }
-.row .title1{
+.title1{
     text-transform: @upp;
     font-size: 18px;
     border-bottom: 1px solid @color-main;
@@ -145,6 +192,7 @@ body{
 			}
 		}
 		.caption{
+			padding-bottom: 7em;
 			text-align: center;
 			.name{
 				text-transform: @upp;
@@ -176,16 +224,55 @@ body{
 		border: 1px solid @color-main;
 	}
 }
+@media(max-width: 486px){
+	.spmoi .thumbnail{
+		padding-bottom: 0;
+	}
+}
+@media(max-width: 486px){
+	.spmoi .thumbnail .caption .name {
+		font-size: 13px;
+	}
+	.spmoi .thumbnail .caption .price{
+		font-size: 12px;
+		.old-price{
+			font-size: 11px;
+		}
+	}
+}
+@media(max-width: 320px){
+	.spmoi .thumbnail .caption .name {
+		font-size: 9px;
+	}
+	.spmoi .thumbnail .caption .price{
+		font-size: 8px;
+		.old-price{
+			font-size: 7px;
+		}
+	}
+}
 .muahang{
 	border-radius: 0px;
 	color: @color-white;
 	background: red;
-	 padding: 8px 16px;
+	padding: 8px 16px;
     border: none;
 }
 .muahang:hover{
 	background: gray;
 	color: @color-white;
+}
+@media(max-width: 486px){
+	.muahang{
+		padding: 5px 10px;
+		font-size: 13px;
+	}
+}
+@media(max-width: 320px){
+	.muahang{
+		padding: 5px 10px;
+		font-size: 10px;
+	}
 }
 /*end products*/
 
@@ -201,6 +288,12 @@ body{
 		}
 		.list-group-item{
 			margin-bottom: 0px;
+			.active, 
+			.active:focus, 
+			.active:hover{
+				border: solid 1px @color-main;
+    			background: @color-main;
+			}
 		}
 		.list-group-item:hover{
 			background-color: @color-main;
@@ -213,14 +306,18 @@ body{
 			width: 90px;
 			height: 100px;
 		}
+		/*.media-heading{
+			margin-bottom: 0;
+		}*/
 		.media-body {
 			h4{
 				color: @color-main;
 				text-transform: @upp;
-				font-size: 16px;
+				font-size: 14px;
+				line-height: 20px;
 			}
 			span{
-				font-size: 16px;
+				font-size: 10px;
 			}
 		}
 	}
