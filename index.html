@@ -1,194 +1,236 @@
 <!doctype html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mimi shop - Giày xinh cho bé yêu</title>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
-	<style>
-
-	/* Style for our header texts
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mimi shop - Giày xinh cho bé yêu</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+    <style>
+        /* Style for our header texts
 	* --------------------------------------- */
-	h3{
-		color: #eee;
-    	font-size: 3.5em;
-		font-family: 'Sofadi One', cursive;
-  		line-height: 1.5;
-		margin:0;
-		padding:0;
-	}
-	@media(max-width: 968px){
-		h3{
-			font-size: 2.5em;
-		}
-	}
-	@media(max-width: 692px){
-		h3{
-			font-size: 1.5em;
-		}
-	}
-	/* Centered texts in each section
+        
+        h3 {
+            color: #eee;
+            font-size: 3.5em;
+            font-family: 'Sofadi One', cursive;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+        @media(max-width: 968px) {
+            h3 {
+                font-size: 2.5em;
+            }
+        }
+        @media(max-width: 692px) {
+            h3 {
+                font-size: 1.5em;
+            }
+        }
+        /* Centered texts in each section
 	* --------------------------------------- */
-	.section{
-		text-align:center;
-		overflow: hidden;
-	}
-
-	#myVideo{
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		top:0;
-		right:0;
-		width: 100%;
-		height: 100%;
-		background-size: 100% 100%;
- 		background-color: black; /* in case the video doesn't fit the whole page*/
-  		background-image: /* our video */;
-  		background-position: center center;
-  		background-size: contain;
-   		object-fit: cover; /*cover video background */
-   		z-index:3;
-	}
-
-
-
-	/* Layer with position absolute in order to have it over the video
+        
+        .section {
+            text-align: center;
+            overflow: hidden;
+        }
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-color: black;
+            /* in case the video doesn't fit the whole page*/
+            
+            background-image:
+            /* our video */
+            
+            ;
+            background-position: center center;
+            background-size: contain;
+            object-fit: cover;
+            /*cover video background */
+            
+            z-index: 3;
+        }
+        /* Layer with position absolute in order to have it over the video
 	* --------------------------------------- */
-	#section0 .layer{
-		position: absolute;
-		z-index: 4;
-		width: 100%;
-		left: 0;
-		top: 43%;
-	}
-
-	/*solves problem with overflowing video in Mac with Chrome */
-	#section0{
-		overflow: hidden;
-	}
-
-
-	/* Bottom menu
+        
+        #section0 .layer {
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            left: 0;
+            top: 43%;
+        }
+        /*solves problem with overflowing video in Mac with Chrome */
+        
+        #section0 {
+            overflow: hidden;
+        }
+        /* Bottom menu
 	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	#section3{
-	  position: relative;
-	  height: 900px;
-	  background: url("images/bg-2.jpg") no-repeat 50% 0 fixed;
-	  font-family: 'Elsie', cursive;
-	  overflow: hidden; }
-  .section-3 #steve-img {
-    margin: 0 auto;
-    z-index: 200;
-    position: absolute;
-    right: 0px; }
-  .section-3 .steve {
-    font-size: 1em;
-    background: rgba(44, 62, 80, 0.8);
-    position: absolute;
-    z-index: 100;
-    left: 50px;
-    width: 600px;
-    font-size: 20px; }
-    .section-3 .test:hover{
-  text-decoration: underline;
-  color: #fff;
-}
-@-webkit-keyframes my {
-   0% { color: transparent; } 
-   50% { color: #fff;  } 
-   100% { color: ;  } 
- }
- @-moz-keyframes my { 
-   0% { color: transparent;  } 
-   50% { color: ;  }
-   100% { color: ;  } 
- }
- @-o-keyframes my { 
-   0% { color: transparent; } 
-   50% { color: ; } 
-   100% { color: ;  } 
- }
- @keyframes my { 
-   0% { color: transparent;  } 
-   50% { color: #fff;  }
-   100% { color: transparent;  } 
- } 
- .test {
-    font-weight:bold;
-   -webkit-animation: my 1500ms infinite;
-   -moz-animation: my 1500ms infinite; 
-   -o-animation: my 1500ms infinite; 
-   animation: my 4000ms infinite;
-}
-.home{
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.home:hover{
-	color: #fff;
-	font-weight: bold;
-}
-	</style>
+        
+        #infoMenu li a {
+            color: #fff;
+        }
+        #section3 {
+            position: relative;
+            height: 900px;
+            background: url("images/bg-2.jpg") no-repeat 50% 0 fixed;
+            font-family: 'Elsie', cursive;
+            overflow: hidden;
+        }
+        .section-3 #steve-img {
+            margin: 0 auto;
+            z-index: 200;
+            position: absolute;
+            right: 0px;
+        }
+        .section-3 .steve {
+            font-size: 1em;
+            background: rgba(44, 62, 80, 0.8);
+            position: absolute;
+            z-index: 100;
+            left: 50px;
+            width: 600px;
+            font-size: 20px;
+        }
+        .section-3 .test:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+        @-webkit-keyframes my {
+            0% {
+                color: transparent;
+            }
+            50% {
+                color: #fff;
+            }
+            100% {
+                color: ;
+            }
+        }
+        @-moz-keyframes my {
+            0% {
+                color: transparent;
+            }
+            50% {
+                color: ;
+            }
+            100% {
+                color: ;
+            }
+        }
+        @-o-keyframes my {
+            0% {
+                color: transparent;
+            }
+            50% {
+                color: ;
+            }
+            100% {
+                color: ;
+            }
+        }
+        @keyframes my {
+            0% {
+                color: transparent;
+            }
+            50% {
+                color: #fff;
+            }
+            100% {
+                color: transparent;
+            }
+        }
+        .test {
+            font-weight: bold;
+            -webkit-animation: my 1500ms infinite;
+            -moz-animation: my 1500ms infinite;
+            -o-animation: my 1500ms infinite;
+            animation: my 4000ms infinite;
+        }
+        .home {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .home:hover {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-	<div id="fullpage">
-	<div class="section " id="section0">
-		<video autoplay loop muted id="myVideo">
-			<source src="media/flowers.mp4" type="video/mp4">
-			<source src="media/flowers.webm" type="video/webm">
-		</video>
-		<div class="layer">
-			<img src="images/logo1.png" alt="" width="220px" height="auto">
-			<h3 class="test">&ldquo;Mimi shop - Giày xinh cho bé yêu&ldquo;</h3>
-		</div>
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1"><img src="images/6.jpg" alt=""></div>
-	    <div class="slide" id="slide2"><img src="images/7.jpg" alt=""></div>
-	    <div class="slide" id="slide3"><img src="images/4.jpg" alt=""></div>
-	    <div class="slide" id="slide4"><img src="images/5.jpg" alt=""></div>
-	</div>
-	<!-- <div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div> -->
-	<div class="section" id="section3">
-		<!-- <img id="steve-img" src="images/sherlock.png" alt="steve jobs"/> -->
-		<div class="quotes steve">
-			<p>&ldquo;Mimi shop - Giày xinh cho bé yêu&rdquo; chuyên các mặt hàng giày <br> dép trẻ em, giày bé trai, giày bé gái, từ độ tuổi sơ sinh đến cấp tiểu học.</p>
-			<p>&ldquo;Vì đã là mẹ của một bé con, nên khi chọn hàng cho shop, <br> shop luôn chọn lựa kỹ càng, với tiêu chí giày phải êm chân <br> và tạo cảm giác thoải mái cho bé khi mang, như khi shop chọn giày cho con.&rdquo;</p>
-			<p>&ldquo;Tất cả hình trên website là hình tự chụp sản phẩm thật tại shop,  <br>do đó khách hoàn toàn yên tâm khi nhận hàng.&rdquo;</p>
-			<p>&ldquo;Cam kết không bán hàng lỗi, giao hàng đúng như sản phẩm khách yêu cầu.&rdquo;</p>
-			<p>Hãy đến với &ldquo;MIMI SHOP - GIÀY XINH CHO BÉ YÊU&ldquo; đễ chọn được những sản phẩm ưng ý, chất lượng với giá cả hợp lý, các mẹ nhé!</p>
-			<a href="home.html" title="" class="home"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Trang chủ</a>
-		</div>
-	</div>
-</div>
+    <div id="fullpage">
+        <div class="section " id="section0">
+            <video autoplay loop muted id="myVideo">
+                <source src="media/video-bg.mp4" type="video/mp4">
+                    <source src="media/video-bg.webm" type="video/webm">
+            </video>
+            <div class="layer">
+                <img src="images/logo1.png" alt="" width="220px" height="auto">
+                <h3 class="test">&ldquo;Mimi shop - Giày xinh cho bé yêu&ldquo;</h3>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1"><img src="images/6.jpg" alt="">
+            </div>
+            <div class="slide" id="slide2"><img src="images/7.jpg" alt="">
+            </div>
+            <div class="slide" id="slide3"><img src="images/4.jpg" alt="">
+            </div>
+            <div class="slide" id="slide4"><img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <!-- <div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div> -->
+        <div class="section" id="section3">
+            <!-- <img id="steve-img" src="images/sherlock.png" alt="steve jobs"/> -->
+            <div class="quotes steve">
+                <p>&ldquo;Mimi shop - Giày xinh cho bé yêu&rdquo; chuyên các mặt hàng giày
+                    <br> dép trẻ em, giày bé trai, giày bé gái, từ độ tuổi sơ sinh đến cấp tiểu học.</p>
+                <p>&ldquo;Vì đã là mẹ của một bé con, nên khi chọn hàng cho shop,
+                    <br> shop luôn chọn lựa kỹ càng, với tiêu chí giày phải êm chân
+                    <br> và tạo cảm giác thoải mái cho bé khi mang, như khi shop chọn giày cho con.&rdquo;</p>
+                <p>&ldquo;Tất cả hình trên website là hình tự chụp sản phẩm thật tại shop,
+                    <br>do đó khách hoàn toàn yên tâm khi nhận hàng.&rdquo;</p>
+                <p>&ldquo;Cam kết không bán hàng lỗi, giao hàng đúng như sản phẩm khách yêu cầu.&rdquo;</p>
+                <p>Hãy đến với &ldquo;MIMI SHOP - GIÀY XINH CHO BÉ YÊU&ldquo; đễ chọn được những sản phẩm ưng ý, chất lượng với giá cả hợp lý, các mẹ nhé!</p>
+                <a href="home.html" title="" class="home"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Trang chủ</a>
+            </div>
+        </div>
+    </div>
 
 
-	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-	<script src="js/jquery.easing.min.js"></script>
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="js/jquery.easing.min.js"></script>
 
 
-	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-    $('#fullpage').fullpage({
-    	navigation: true,
-    	verticalCentered: false,
-    	css3:false,
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+                verticalCentered: false,
+                css3: false,
 
-    	afterRender: function(){
-			$('video').get(0).play();
-		}		
-    });
-});
-	</script>
+                afterRender: function() {
+                    $('video').get(0).play();
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
