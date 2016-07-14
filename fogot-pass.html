@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+        <title>Lấy lại mật khẩu</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+        
+    </head>
+
+    <body ng-app="shopApp" ng-controller="shopController">
+        
+        <!-- Navigation -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrap">
+                    <p class="form-title">
+                            </p>
+                        <form class="login" name="fogotPass" ng-submit="submit()" novalidate>
+                        <div>
+                            <input type="email" name="email" ng-model="email" placeholder="Nhập email của bạn tại đây để lấy lại mật khẩu">
+                            <p ng-show="fogotPass.email.$error.required" class="help-block">Email là bắt buộc.</p>
+                            <p ng-show="fogotPass.email.$invalid" class="help-block">Vui lòng nhập 1 email.</p>
+                        </div>
+                        <button class="btn btn-success btn-sm" type="submit" ng-disabled=" fogotPass.email.$pristine || fogotPass.email.$invalid">Gửi đi</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+       
+       
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+       
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angularShop.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

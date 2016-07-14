@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
+img {
+  /*max-height: 80%;*/
+}
 /*CSS phan menu*/
 .menu-top {
   background: #111111;
@@ -193,7 +196,6 @@ body {
 /*end products*/
 /*css phan sidebar*/
 .list-group {
-  margin-top: 25px;
 }
 .list-group .item {
   padding-bottom: 20px;
@@ -234,11 +236,18 @@ body {
 .list-group .products .media-body span {
   font-size: 10px;
 }
+table td{
+  padding: 4px;
+}
+table td.bold{
+  font-weight: 700;
+}
 /*end css sidebar*/
 hr {
   border: 1px solid #ccc;
   margin: 0px;
 }
+
 /*css footer*/
 footer .footer-menu {
   font-size: 15px;
@@ -398,30 +407,30 @@ footer .menu ul li {
 .detail .thao {
   padding-left: 35px;
 }
-.detail .choose {
+ .choose {
   color: #777;
   text-transform: none;
 }
-.detail .choose h2 {
+ .choose h2 {
   font-size: 18px;
   margin-top: 3px;
   margin-bottom: 0;
 }
-.detail .choose select {
+ .choose select {
   width: 20%;
   margin-top: 4px;
 }
-.detail .choose h3 {
+ .choose h3 {
   font-size: 18px;
   margin-top: -4px;
 }
-.detail .choose .number {
+ .choose .number {
   width: 45%;
   margin-top: 4px;
   margin-bottom: 8px;
   max-width: 100%;
 }
-.detail .choose .size .radio {
+ .choose .size .radio {
   position: relative;
   margin-right: 4px;
   height: 30px;
@@ -430,7 +439,7 @@ footer .menu ul li {
   display: inline-block;
   z-index: 0;
 }
-.detail .choose .size input {
+ .choose .size input {
   position: absolute;
   z-index: 2;
   opacity: 0;
@@ -440,7 +449,7 @@ footer .menu ul li {
   left: 20px;
   top: -3px;
 }
-.detail .choose .size .style {
+ .choose .size .style {
   position: absolute;
   z-index: 1;
   border: 3px solid #eee;
@@ -448,7 +457,7 @@ footer .menu ul li {
   width: 100%;
   text-align: center;
 }
-.detail .choose .size input[type="radio"]:checked ~ .style {
+ .choose .size input[type="radio"]:checked ~ .style {
   border-color: #333;
 }
 .detail .tab {
@@ -463,6 +472,19 @@ footer .menu ul li {
 .detail .tab .color-tab {
   background-color: #7cc4e2;
   color: #ffffff;
+}
+.mausac img{
+  margin: 5px 2px 0 0;
+  border: 1px solid #fff;
+}
+.mausac img:hover{
+  border: 1px solid #111;
+}
+.timkiem{
+  font-weight: 700;
+}
+.price{
+  padding-bottom: 3px;
 }
 /*end detail*/
 /*category*/

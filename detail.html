@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-
+        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
         <title>Chi tiết sản phẩm</title>
 
         <!-- Bootstrap Core CSS -->
@@ -20,9 +20,9 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
 
-    <body>
+    <body ng-app="shopApp" ng-controller="shopController">
         
-        <!-- Navigation -->
+       <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid menu-top">
                 <div class="container">
@@ -87,31 +87,42 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trang phục bé trai <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                    <li><a href="#">Áo sơ mi dài tay</a></li>
+                                    <li><a href="#">Áo thun</a></li>
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Bộ bé trai</a></li>
+                                    <li><a href="#">Vớ</a></li>
+                                    <li><a href="#">Trang phục trẻ sơ sinh</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Trang phục bé gái <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                    <li><a href="#">Váy công chúa</a></li>
+                                    <li><a href="#">Áo kiểu</a></li>
+                                    <li><a href="#">Quần jean</a></li>
+                                    <li><a href="#">Bộ bé gái</a></li>
+                                    <li><a href="#">Vớ</a></li>
+                                    <li><a href="#">Trang phục trẻ sơ sinh</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giày<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Dép</a></li>
+                                    <li><a href="#">Giày sandal</a></li>
+                                    <li><a href="#">Giày Boot</a></li>
+                                    <li><a href="#">Giày búp bê</a></li>
+                                    <li><a href="#">Giày thể thao</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Phụ kiện<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                    <li><a href="#">Ba lô</a></li>
+                                    <li><a href="#">Nón</a></li>
+                                    <li><a href="#">Đồng hồ</a></li>
+                                    <li><a href="#">Kẹp tóc</a></li>
                                 </ul>
                             </li>
                              <li class="hidden-md hidden-sm">
@@ -129,8 +140,7 @@
                                 </a>
                                 <div class="dropdown-menu search">
                                     <form action="" method="post" accept-charset="utf-8" >
-                                        <input type="search" name="" value="" placeholder="Bạn muốn tìm gì?" class="form-control">
-                                        <input type="button" name="" value="Tìm kiếm" class="btn btn-default">
+                                        <input type="text" name="" value="" placeholder="Bạn muốn tìm gì??" class="form-control" ng-model="test">
                                     </form>
                                 </div>
                             </li>
@@ -203,7 +213,7 @@
                         <span>Giày ABC</span>
                     </div>
                     <div class="col-md-5 col-sm-5 col-xs-12 detail-img">
-                        <img id="zoom_01" src='images/g11.jpg' data-zoom-image="images/g1.jpg" class="img-responsive" />
+                        <img id="zoom_01" src='images/bb.jpg' data-zoom-image="images/zoom-bb.jpg" class="img-responsive" />
                     </div>
 
                     <div class="col-md-7 col-sm-7 col-xs-12 thao">
@@ -320,11 +330,11 @@
                         </nav>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <h4>Tìm kiếm sản phẩm</h4>
+                        <h4>Đăng ký nhận email</h4>
                         <div>
                             <form accept-charset="UTF-8" action="" id="contact" method="post">
-                                <input  type="text" placeholder="Nhập từ khóa tìm kiếm..." class="form-control">
-                                <button class="muahang" type="submit"><span>Tìm kiếm</span></button>
+                                <input  type="text" placeholder="Email nhận tin" class="form-control">
+                                <button class="muahang" type="submit"><span>Gửi đi</span></button>
                             </form>
                         </div>
                     </div>
@@ -333,7 +343,6 @@
                         <div class="share">
                             <a href="#"><img src="images/fb.png" alt=""></a>
                             <a href="#"><img src="images/google.png" alt=""></a>
-                            <!-- <a href="#"><img src="images/gmail.png" alt=""></a> -->
                             <a href="#"><img src="images/twitter.png" alt=""></a>
                         </div>
                     </div>
@@ -366,6 +375,8 @@
         <!-- jQuery -->
         
         <!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angularShop.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src='js/jquery.elevatezoom.js'></script>
