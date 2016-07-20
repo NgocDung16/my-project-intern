@@ -1,0 +1,43 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('database/database.json', function(data) {
+       $.each(data.user, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.username + "</td>" +
+           "<td>" + f.password + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>username</th>
+            <th>password</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>

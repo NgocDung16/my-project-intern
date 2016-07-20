@@ -1,236 +1,287 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mimi shop - Giày xinh cho bé yêu</title>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
-    <style>
-        /* Style for our header texts
-	* --------------------------------------- */
-        
-        h3 {
-            color: #eee;
-            font-size: 3.5em;
-            font-family: 'Sofadi One', cursive;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-        }
-        @media(max-width: 968px) {
-            h3 {
-                font-size: 2.5em;
-            }
-        }
-        @media(max-width: 692px) {
-            h3 {
-                font-size: 1.5em;
-            }
-        }
-        /* Centered texts in each section
-	* --------------------------------------- */
-        
-        .section {
-            text-align: center;
-            overflow: hidden;
-        }
-        #myVideo {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background-size: 100% 100%;
-            background-color: black;
-            /* in case the video doesn't fit the whole page*/
-            
-            background-image:
-            /* our video */
-            
-            ;
-            background-position: center center;
-            background-size: contain;
-            object-fit: cover;
-            /*cover video background */
-            
-            z-index: 3;
-        }
-        /* Layer with position absolute in order to have it over the video
-	* --------------------------------------- */
-        
-        #section0 .layer {
-            position: absolute;
-            z-index: 4;
-            width: 100%;
-            left: 0;
-            top: 43%;
-        }
-        /*solves problem with overflowing video in Mac with Chrome */
-        
-        #section0 {
-            overflow: hidden;
-        }
-        /* Bottom menu
-	* --------------------------------------- */
-        
-        #infoMenu li a {
-            color: #fff;
-        }
-        #section3 {
-            position: relative;
-            height: 900px;
-            background: url("images/bg-2.jpg") no-repeat 50% 0 fixed;
-            font-family: 'Elsie', cursive;
-            overflow: hidden;
-        }
-        .section-3 #steve-img {
-            margin: 0 auto;
-            z-index: 200;
-            position: absolute;
-            right: 0px;
-        }
-        .section-3 .steve {
-            font-size: 1em;
-            background: rgba(44, 62, 80, 0.8);
-            position: absolute;
-            z-index: 100;
-            left: 50px;
-            width: 600px;
-            font-size: 20px;
-        }
-        .section-3 .test:hover {
-            text-decoration: underline;
-            color: #fff;
-        }
-        @-webkit-keyframes my {
-            0% {
-                color: transparent;
-            }
-            50% {
-                color: #fff;
-            }
-            100% {
-                color: ;
-            }
-        }
-        @-moz-keyframes my {
-            0% {
-                color: transparent;
-            }
-            50% {
-                color: ;
-            }
-            100% {
-                color: ;
-            }
-        }
-        @-o-keyframes my {
-            0% {
-                color: transparent;
-            }
-            50% {
-                color: ;
-            }
-            100% {
-                color: ;
-            }
-        }
-        @keyframes my {
-            0% {
-                color: transparent;
-            }
-            50% {
-                color: #fff;
-            }
-            100% {
-                color: transparent;
-            }
-        }
-        .test {
-            font-weight: bold;
-            -webkit-animation: my 1500ms infinite;
-            -moz-animation: my 1500ms infinite;
-            -o-animation: my 1500ms infinite;
-            animation: my 4000ms infinite;
-        }
-        .home {
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .home:hover {
-            color: #fff;
-            font-weight: bold;
-        }
-    </style>
-</head>
+    <head>
 
-<body>
-    <div id="fullpage">
-        <div class="section " id="section0">
-            <video autoplay loop muted id="myVideo">
-                <source src="media/video-bg.mp4" type="video/mp4">
-                    <source src="media/video-bg.webm" type="video/webm">
-            </video>
-            <div class="layer">
-                <img src="images/logo1.png" alt="" width="220px" height="auto">
-                <h3 class="test">&ldquo;Mimi shop - Giày xinh cho bé yêu&ldquo;</h3>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+        <title>Trang chủ</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- Custom CSS -->
+        <link href="css/shop-homepage.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body ng-app="shopApp" ng-controller="shopController">
+        
+        <!-- Navigation -->
+        <div ng-include="'header.html'" ></div>
+        <div ng-include="'slider.html'">
+            
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="col-md-3 hidden-sm hidden-xs">
+                <div class="list-group">
+                    <div class="item">
+                        <a href="index.html" class="list-group-item active">Trang chủ</a>
+                        <a ng-repeat="i in items" href="#" class="list-group-item">{{ i.item }}</a>
+                    </div>
+                    <div class="products">
+                        <div class="title1">
+                            Bài viết mới
+                        </div>
+                        <div class="media" ng-repeat="n in news">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object" ng-src="{{ n.imageUrl }}" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{n.title}}</h4>
+                                <button type="submit" class="muahang"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv">
+                        <img src="images/partner2.png" alt="">
+                        <img src="images/partner.png" alt="">
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/mimishop.giayxinhchobeyeu/" data-tabs="timeline" data-width="255px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <div class="fb-xfbml-parse-ignore">
+                            <blockquote cite="https://www.facebook.com/mimishop.giayxinhchobeyeu/">
+                                <a href="https://www.facebook.com/mimishop.giayxinhchobeyeu/">Mimi shop - Giày xinh cho bé yêu</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="title">
+                        <h1>Sản phẩm mới </h1>
+                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
+                    </div>
+                </div>
+                <div class="row spmoi">
+                    <div ng-repeat="p in products | filter : {id_category: 'spmoi'} | limitTo : 3 | filter : test" class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="thumbnail">
+                            <div class="detail-img">
+                                <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">{{ p.name }}</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">{{ p.old }}₫</span>
+                                    <span class= "new-price">{{ p.new }}₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6 display">
+                        <div class="thumbnail ">
+                            <div class="detail-img">
+                                <img src="images/a33.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">Thumbnail label</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">250.000₫</span>
+                                    <span class= "new-price">200.000₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <h1>Thời trang bé trai</h1>
+                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
+                    </div>
+                </div>
+                <div class="row spmoi">
+                    <div class="col-md-4 col-sm-6 col-xs-6 display">
+                        <div class="thumbnail ">
+                            <div class="detail-img">
+                                <img src="images/bo.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">Thumbnail label</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">250.000₫</span>
+                                    <span class= "new-price">200.000₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-repeat="p in products | filter : {id_category: 'boy'} | limitTo : 3 | filter : test" class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="thumbnail">
+                            <div class="detail-img">
+                                <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">{{ p.name }}</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">{{ p.old }}₫</span>
+                                    <span class= "new-price">{{ p.new }}₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <h1>Thời trang bé gái</h1>
+                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
+                    </div>
+                </div>
+                <div class="row spmoi">
+                    <div class="col-md-4 col-sm-6 col-xs-6 display">
+                        <div class="thumbnail ">
+                            <div class="detail-img">
+                                <img src="images/v23.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">Thumbnail label</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">250.000₫</span>
+                                    <span class= "new-price">200.000₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-repeat="p in products | filter : 'girl' | limitTo : 3 | filter : test" class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="thumbnail">
+                            <div class="detail-img">
+                                <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">{{ p.name }}</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">{{ p.old }}₫</span>
+                                    <span class= "new-price">{{ p.new }}₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="title">
+                        <h1>Giày dép thời trang</h1>
+                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
+                    </div>
+                </div>
+                <div class="row spmoi">
+                    <div class="col-md-4 col-sm-6 col-xs-6 display">
+                        <div class="thumbnail ">
+                            <div class="detail-img">
+                                <img src="images/bbb.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">Thumbnail label</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">250.000₫</span>
+                                    <span class= "new-price">200.000₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-repeat="p in products | filter : {id_category:'shoe'} | limitTo : 3 | filter : test" class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="thumbnail">
+                            <div class="detail-img">
+                                <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
+                            </div>
+                            <div class="caption">
+                                <div class="name">
+                                    <a href="#">{{ p.name }}</a>
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">{{ p.old }}₫</span>
+                                    <span class= "new-price">{{ p.new }}₫</span>
+                                </div>
+                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section" id="section1">
-            <div class="slide" id="slide1"><img src="images/6.jpg" alt="">
-            </div>
-            <div class="slide" id="slide2"><img src="images/7.jpg" alt="">
-            </div>
-            <div class="slide" id="slide3"><img src="images/4.jpg" alt="">
-            </div>
-            <div class="slide" id="slide4"><img src="images/5.jpg" alt="">
-            </div>
+        <!-- /.container --><hr>
+        <div class="container" ng-include="'footer.html'">
+            <!-- Footer -->
         </div>
-        <!-- <div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div> -->
-        <div class="section" id="section3">
-            <!-- <img id="steve-img" src="images/sherlock.png" alt="steve jobs"/> -->
-            <div class="quotes steve">
-                <p>&ldquo;Mimi shop - Giày xinh cho bé yêu&rdquo; chuyên các mặt hàng giày
-                    <br> dép trẻ em, giày bé trai, giày bé gái, từ độ tuổi sơ sinh đến cấp tiểu học.</p>
-                <p>&ldquo;Vì đã là mẹ của một bé con, nên khi chọn hàng cho shop,
-                    <br> shop luôn chọn lựa kỹ càng, với tiêu chí giày phải êm chân
-                    <br> và tạo cảm giác thoải mái cho bé khi mang, như khi shop chọn giày cho con.&rdquo;</p>
-                <p>&ldquo;Tất cả hình trên website là hình tự chụp sản phẩm thật tại shop,
-                    <br>do đó khách hoàn toàn yên tâm khi nhận hàng.&rdquo;</p>
-                <p>&ldquo;Cam kết không bán hàng lỗi, giao hàng đúng như sản phẩm khách yêu cầu.&rdquo;</p>
-                <p>Hãy đến với &ldquo;MIMI SHOP - GIÀY XINH CHO BÉ YÊU&ldquo; đễ chọn được những sản phẩm ưng ý, chất lượng với giá cả hợp lý, các mẹ nhé!</p>
-                <a href="home.html" title="" class="home"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Trang chủ</a>
-            </div>
-        </div>
-    </div>
+        <!-- /.container -->
 
+        <!-- jQuery -->
 
-    <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angularShop.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow65.js"></script>
+        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1790680167829187',
+                    xfbml: true,
+                    version: 'v2.6'
+                });
+            };
 
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-    <script src="js/jquery.easing.min.js"></script>
-
-
-    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                navigation: true,
-                verticalCentered: false,
-                css3: false,
-
-                afterRender: function() {
-                    $('video').get(0).play();
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
                 }
-            });
-        });
-    </script>
-</body>
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div id="fb-root"></div>
+        <script>(function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=270216799987428";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+    
+    </body>
 
 </html>
