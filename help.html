@@ -24,9 +24,33 @@
 
 <body>
 
+    <script>
+        $( document ).ready(function() {
+            // API
+            var link = 'database/database.json';
+            $.ajax({
+                    url: link,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function(data) {
+                            var html = '';
+                            $.each(data, function(index, item) {
+                                    console.log(data);
+                                     html += "<p>" + item.username + "</p>" + "<p>" + item.password + "</p>";
+                            });
+//                        $(html).appendTo("#list-user li");  
+                           $('#list-user').append(html)
+                    }  
+            });
+        });
+    </script>
+    <ul id="list-user">
+        
+    </ul>
+    
 <div class="wrapper">
 <div class="profile">
-   <table id= "userdata" border="2">
+   <table id= "userdata" border="1">
   <thead>
             <th>username</th>
             <th>password</th>

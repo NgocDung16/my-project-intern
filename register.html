@@ -22,7 +22,7 @@
 
     <body>
     <div class="col-md-3"></div>
-    <div id="main" ng-app="shopApp" ng-controller="shopController" class="col-md-6">
+    <div id="main" ng-app="shopApp" ng-controller="shopController" class="col-md-6" style="margin-top: 50px;">
         <p class="form-title">
             Đăng ký
         </p>
@@ -33,7 +33,7 @@
             <div class="form-group">
                 <label class="col-xs-3 control-label">Email</label>
                 <div class="col-xs-9">
-                    <input type="email" name="email" class="form-control" placeholder="Email" ng-model="email" autocomplete="off" required >
+                    <input id="email" type="email" name="email" value="" class="form-control" placeholder="Email" ng-model="email" autocomplete="off" required >
                     <i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid"></i>
                     <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
                         <span ng-show="form.email.$error.required">Bạn chưa nhập địa chỉ email</span>
@@ -45,7 +45,7 @@
             <div class="form-group">
                 <label for="username" class="col-xs-3 control-label required">Tên đăng nhập</label>
                 <div class="col-xs-9">
-                    <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập"  ng-model="username"  ng-minlength="6" ng-maxlength="50" ng-pattern="/^[0-9a-zA-Z]+$/" required>
+                    <input id= "username" name="username" type="text" class="form-control" placeholder="Tên đăng nhập"  ng-model="username"  ng-minlength="6" ng-maxlength="50" ng-pattern="/^[0-9a-zA-Z]+$/" required>
                     <i class="fa fa-check text-success" ng-show="form.username.$dirty && form.username.$valid"></i>
                     <div ng-show="form.username.$dirty && form.username.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
                     <span ng-show="form.username.$error.required">Tên đăng nhập không được bỏ trống</span>
@@ -58,7 +58,7 @@
             <div class="form-group">
                 <label for="password" class="col-xs-3 control-label required">Mật khẩu</label>
                 <div class="col-xs-9">
-                    <input name="password" ng-model="password" type="password"class="form-control" placeholder="Mật khẩu" ng-minlength="6" ng-maxlength="30" required>
+                    <input id="password" name="password" ng-model="password" type="password"class="form-control" placeholder="Mật khẩu" ng-minlength="6" ng-maxlength="30" required>
                     <i class="fa fa-check text-success" ng-show="form.password.$dirty && form.password.$valid"></i>
                     <div ng-show="form.password.$dirty && form.password.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
                     <span ng-show="form.password.$error.required">Mật khẩu không được bỏ trống</span>
@@ -70,34 +70,34 @@
             <div class="form-group">
                 <label for="birthday" class="col-xs-3 control-label">Ngày sinh</label>
                 <div class="col-xs-9">
-                    <input name="birthday" type="date" ng-model="birthday" class="form-control">
+                    <input id="birthday" name="birthday" type="date" ng-model="birthday" class="form-control">
                     <i class="fa fa-check text-success" ng-show="form.birthday.$dirty && form.birthday.$valid"></i>
                     <div ng-show="form.birthday.$dirty && form.birthday.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i></div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="sex" class="col-xs-3 control-label">Giới tính</label>
+                <label for="gender" class="col-xs-3 control-label">Giới tính</label>
                 <div class="col-md-9">
-                    <select name="sex" ng-model="sex">
+                    <select name="gender" ng-model="gender" id="gender">
                         <option value="">Chọn giới tính</option>
-                        <option value="">Nam</option>
-                        <option value="">Nữ</option>
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
                     </select>
-                    <i class="fa fa-check text-success" ng-show="form.sex.$dirty && form.sex.$valid"></i>
-                    <div ng-show="form.sex.$dirty && form.sex.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i></div>
+                    <i class="fa fa-check text-success" ng-show="form.gender.$dirty && form.gender.$valid"></i>
+                    <div ng-show="form.gender.$dirty && form.gender.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i></div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="address" class="col-xs-3 control-label">Địa chỉ</label>
                 <div class="col-xs-9">
-                    <input name="address" type="text" ng-model="address" class="form-control" placeholder="Địa chỉ">
+                    <input id= "address" name="address" type="text" ng-model="address" class="form-control" placeholder="Địa chỉ">
                     <i class="fa fa-check text-success" ng-show="form.address.$dirty && form.address.$valid"></i>
                     <div ng-show="form.address.$dirty && form.address.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i></div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-3 col-xs-9">
-                    <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Đăng ký</button>
+                    <button type="submit" onclick="getValue()" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Đăng ký</button>
                 </div>
             </div>
         </form>
@@ -108,7 +108,20 @@
         <script type="text/javascript" src="js/angularShop.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        
+        <script>
+            function getValue(){
+            var object = []; 
+            
+            var email = document.getElementById("email").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var birthday = document.getElementById("birthday").value;
+            var gender = document.getElementById("gender").value;
+            var address = document.getElementById("address").value;
+            object.push(email, username, password, birthday, gender, address);
+            console.log(object);
+        }
+        </script>
     </body>
 
 </html>

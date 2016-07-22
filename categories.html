@@ -86,7 +86,7 @@
                     <div class="title1" style="padding-top: 15px; margin-bottom: 30px; font-style: italic">Sản phẩm mới</div>
                 </div>
                 <div class="row spmoi">
-                    <div class="col-md-4 col-sm-6 col-xs-6" ng-repeat="p in products |  filter : test">
+                    <div class="col-md-4 col-sm-6 col-xs-6" ng-repeat="p in products |  filter : test| filter : {id_category: 'spmoi'}">
                         <div class="thumbnail">
                             <div class="detail-img">
                                 <img ng-src="{{p.imageUrl}}" alt="..." class="img-responsive">
