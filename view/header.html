@@ -1,0 +1,88 @@
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation " ng-controller="headerController"> 
+     <div class="container-fluid menu-top">
+         <div class="container">
+             <div class="row ">
+                 <div class="col-md-2 col-sm-2 logo-small">
+                     <img src="images/logo2.png" alt="Logo" class="img-responsive">
+                 </div>
+                 <div class="col-md-4 col-sm-4"></div>
+                 <div class="col-md-6 col-sm-6">
+                     <div id="menu-wrapper">
+                         <ul>
+                             <li>
+                                 <a href="#">
+                                     <i class="fa fa-shopping-cart">
+                                     </i> Giỏ hàng <span>0</span>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href="login.html">
+                                     <i class="fa fa-user" aria-hidden="true">
+                                     </i> Đăng nhập
+                                 </a>
+                             </li>
+                            <li>
+                                 <a href="register.html">
+                                     <i class="fa fa-user-plus" aria-hidden="true">
+                                     </i> Đăng ký
+                                 </a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="border">
+
+     </div>
+     <div class="container">
+         <div class="row">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a href="#" class="fix-logo">
+                     <img alt="logo" src="images/logo.png">
+                 </a>
+             </div>
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                    
+                     <li ng-repeat="menu in menus" class="{{menu.class}}" ng-class="{'active': menu.id == states.activeItem}" ng-click="states.activeItem=menu.id">
+                         <a ui-sref="{{menu.link}}" class="dropdown-toggle" role="button">{{menu.name}}</a>
+                         <ul class="dropdown-menu">
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu1}}</a></li>
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu2}}</a></li>
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu3}}</a></li>
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu4}}</a></li>
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu5}}</a></li>
+                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu6}}</a></li>
+                         </ul>
+                     </li>
+                    
+                     <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-expanded="false">
+                             <i class="fa fa-search" aria-hidden="true" style="font-size: 18px;"></i>
+                         </a>
+                         <div class="dropdown-menu search">
+                             <form action="" method="post" accept-charset="utf-8" >
+                                 <input type="text" name="" ng-change="checkFilter()" value="" placeholder="Bạn muốn tìm gì??" class="form-control" ng-model="productFilter">
+                             </form>
+                         </div>
+                     </li>
+                 </ul>
+
+             </div>
+
+             <!-- /.navbar-collapse -->
+         </div>
+     </div>
+     <!-- /.container -->
+ </nav>

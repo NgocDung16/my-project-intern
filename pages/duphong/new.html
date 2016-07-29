@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+        <title>Tin tức - MimiShop</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- Custom CSS -->
+        <link href="css/shop-homepage.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body ng-app="shopApp" ng-controller="shopController">
+        
+       <!-- Navigation -->
+       <div ng-include="'view/header.html'"></div>
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Project One -->
+            <div class="row news">
+                <div class="col-md-9">
+                    <div class="row new1" ng-repeat="n in news | limitTo: 3">
+                        <div class="col-md-6 img-new">
+                            <a href="#">
+                                <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="title-new">
+                                {{n.title}}
+                            </div>
+                            <div class="content-new">
+                                {{n.description}}
+                            </div>
+                            <button class="muahang">Xem chi tiết</button>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 more text-center" style="margin-bottom: 20px; margin-top: 10px;">
+                            <input type="button" name="" value="Xem thêm" >
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+              
+                
+            
+                <div class="col-md-3 hidden-sm hidden-xs">
+                    <div class="list-group">
+                        <div class="products">
+                            <div class="title1">
+                                Bài viết liên quan
+                            </div>
+                            <div class="media" ng-repeat="n in news">
+                                <div class="media-left media-middle">
+                                    <a href="#">
+                                        <img class="media-object" ng-src="{{ n.imageUrl }}" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">{{n.title}}</h4>
+                                    <button type="submit" class="muahang"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-page" data-href="https://www.facebook.com/mimishop.giayxinhchobeyeu/" data-tabs="timeline" data-width="255px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <div class="fb-xfbml-parse-ignore">
+                                <blockquote cite="https://www.facebook.com/mimishop.giayxinhchobeyeu/">
+                                    <a href="https://www.facebook.com/mimishop.giayxinhchobeyeu/">Mimi shop - Giày xinh cho bé yêu</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.container --><hr>
+        <div style="clear: both"></div>
+        <div class="container" ng-include="'view/footer.html'">
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angularShop.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '1790680167829187',
+                    xfbml: true,
+                    version: 'v2.6'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </body>
+
+</html>

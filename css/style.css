@@ -157,7 +157,7 @@ img {
 }
 .spmoi .thumbnail .caption .name {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 16px;
   color: #111111;
   margin-top: 10px;
 }
@@ -166,7 +166,7 @@ img {
   text-decoration: none;
 }
 .spmoi .thumbnail .caption .price {
-  font-size: 18px;
+  font-size: 16px;
   color: #7cc4e2;
   font-weight: bold;
   margin-top: 8px;
@@ -532,3 +532,37 @@ footer .menu ul li {
     background-color: #7cc4e2;
 }
 /*end map*/
+/*news*/
+.news{
+    margin-top: 20px;
+}
+.news .img-new{
+    padding-left: 0;
+}
+.new1{
+    margin-bottom: 20px;
+}
+.news .title-new{
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #7cc4e2;
+}
+.news .content-new{
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+/*end news*/
+/*introduce*/
+.introduce{
+    text-transform: none;
+}
+.introduce p{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.introduce p span{
+    color: #7cc4e2;
+}
+/*end*/

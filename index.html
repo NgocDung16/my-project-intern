@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
-        <title>Trang chủ</title>
+        <title>MiMiShop - Giày xinh cho bé yêu</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,160 +25,12 @@
     <body ng-app="shopApp" ng-controller="shopController">
         
         <!-- Navigation -->
-        <div ng-include="'header.html'" ></div>
-        <div ng-include="'slider.html'">
-            
-        </div>
-        <!-- Page Content -->
-        <div class="container">
-            <div class="col-md-3 hidden-sm hidden-xs">
-                <div class="list-group">
-                    <div class="item">
-                        <a href="index.html" class="list-group-item active">Trang chủ</a>
-                        <a ng-repeat="i in items" href="#" class="list-group-item">{{ i.item }}</a>
-                    </div>
-                    <div class="products">
-                        <div class="title1">
-                            Bài viết mới
-                        </div>
-                        <div class="media" ng-repeat="n in news">
-                            <div class="media-left media-middle">
-                                <a href="#">
-                                    <img class="media-object" ng-src="{{ n.imageUrl }}" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">{{n.title}}</h4>
-                                <button type="submit" class="muahang"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="adv">
-                        <img src="images/partner2.png" alt="">
-                        <img src="images/partner.png" alt="">
-                    </div>
-                    <div class="fb-page" data-href="https://www.facebook.com/mimishop.giayxinhchobeyeu/" data-tabs="timeline" data-width="255px" data-height="400px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/mimishop.giayxinhchobeyeu/">
-                                <a href="https://www.facebook.com/mimishop.giayxinhchobeyeu/">Mimi shop - Giày xinh cho bé yêu</a>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="title">
-                        <h1>Sản phẩm mới </h1>
-                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
-                    </div>
-                </div>
-                <div class="row spmoi">
-                    <section class="autoplay slider">
-                        <div ng-repeat="p in products | filter : {id_category: 'spmoi'} | filter : test" class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="thumbnail">
-                                <div class="detail-img">
-                                    <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
-                                </div>
-                                <div class="caption">
-                                    <div class="name">
-                                        <a href="#">{{ p.name }}</a>
-                                    </div>
-                                    <div class="price">
-                                        <span class="old-price">{{ p.old }}₫</span>
-                                        <span class= "new-price">{{ p.new }}₫</span>
-                                    </div>
-                                    <input type="button" name="" value="Xem chi tiết" class="muahang">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row">
-                    <div class="title">
-                        <h1>Thời trang bé trai</h1>
-                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
-                    </div>
-                </div>
-                <div class="row spmoi">
-                    <section class="autoplay slider">
-                        <div ng-repeat="p in products | filter : {id_category: 'boy'} | filter : test" class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="thumbnail">
-                                <div class="detail-img">
-                                    <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
-                                </div>
-                                <div class="caption">
-                                    <div class="name">
-                                        <a href="#">{{ p.name }}</a>
-                                    </div>
-                                    <div class="price">
-                                        <span class="old-price">{{ p.old }}₫</span>
-                                        <span class= "new-price">{{ p.new }}₫</span>
-                                    </div>
-                                    <input type="button" name="" value="Xem chi tiết" class="muahang">
-                                </div>
-                            </div>
-                        </div>
-                    </section>  
-                </div>
-                <div class="row">
-                    <div class="title">
-                        <h1>Thời trang bé gái</h1>
-                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
-                    </div>
-                </div>
-                <div class="row spmoi">
-                    <section class="autoplay slider">
-                        <div ng-repeat="p in products | filter : 'girl' | filter : test" class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="thumbnail">
-                                <div class="detail-img">
-                                    <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
-                                </div>
-                                <div class="caption">
-                                    <div class="name">
-                                        <a href="#">{{ p.name }}</a>
-                                    </div>
-                                    <div class="price">
-                                        <span class="old-price">{{ p.old }}₫</span>
-                                        <span class= "new-price">{{ p.new }}₫</span>
-                                    </div>
-                                    <input type="button" name="" value="Xem chi tiết" class="muahang">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row">
-                    <div class="title">
-                        <h1>Giày dép thời trang</h1>
-                        <a href="#" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
-                    </div>
-                </div>
-                <div class="row spmoi">
-                    <section class="autoplay slider">
-                        <div ng-repeat="p in products | filter : {id_category:'shoe'} | filter : test" class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="thumbnail">
-                                <div class="detail-img">
-                                    <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive">
-                                </div>
-                                <div class="caption">
-                                    <div class="name">
-                                        <a href="#">{{ p.name }}</a>
-                                    </div>
-                                    <div class="price">
-                                        <span class="old-price">{{ p.old }}₫</span>
-                                        <span class= "new-price">{{ p.new }}₫</span>
-                                    </div>
-                                    <input type="button" name="" value="Xem chi tiết" class="muahang">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
+        <div ng-include="'view/header.html'" ></div>
+        <div ui-view>
+            <!-- Page Content -->
         </div>
         <!-- /.container --><hr>
-        <div class="container" ng-include="'footer.html'">
+        <div class="container" ng-include="'view/footer.html'">
             <!-- Footer -->
         </div>
         <!-- /.container -->
@@ -188,10 +40,12 @@
         <script src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/angular.js"></script>
         <script type="text/javascript" src="js/angularShop.js"></script>
+        <script src="js/angular-ui-router.js"></script>
+        <!--<script type="text/javascript" src="script.js"></script>-->
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
-	<script type="text/javascript">
+        <script type="text/javascript">
 	    $(document).on('ready', function() {
 	      $('.autoplay').slick({
 	        slidesToShow: 3,
@@ -246,17 +100,8 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-        <div id="fb-root"></div>
-        <script>(function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id))
-                    return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=270216799987428";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-    
+        <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow65.js"></script>
+        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
     </body>
 
 </html>

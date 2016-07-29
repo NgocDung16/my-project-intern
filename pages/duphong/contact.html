@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+        <title>Liên hệ - MimiShop</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <!-- Custom CSS -->
+        <link href="css/shop-homepage.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body ng-app="shopApp" ng-controller="shopController">
+        
+       <!-- Navigation -->
+       <div ng-include="'view/header.html'"></div>
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row map">
+                <div class="col-md-5 bando">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d402.97465292135115!2d108.21478010470405!3d16.077804703585752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183871d0da35%3A0xf96fc1e846a91d54!2zMTUyIEzDvSBU4buxIFRy4buNbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1468978460202" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-7 contact">
+                    <div class="title1">Liên hệ với chúng tôi</div>
+                    <form name="form" ng-submit="register()" novalidate>
+                        <div class="form-group">
+                            <div ng-show="success" class="text-success text-center">Tin nhắn của bạn đã được gửi đi !</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Họ và tên*" ng-model="fullname"  required name="fullname">
+                            <div ng-show="form.fullname.$dirty && form.fullname.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
+                                <span ng-show="form.fullname.$error.required">Họ và tên không được bỏ trống</span></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email*" ng-model="email"  required name="email">
+                            <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
+                            <span ng-show="form.email.$error.required">Email không được bỏ trống</span>
+                            <span ng-show="form.email.$error.email">Không đúng định dạng email</span></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Địa chỉ">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Nội dung*" ng-model="content"  required name="content"></textarea>
+                            <div ng-show="form.content.$dirty && form.content.$invalid" class="text-danger"><i class="fa fa-times text-danger"></i>
+                                <span ng-show="form.content.$error.required">Nội dung không được bỏ trống</span></div>
+                        </div>
+                        <button class="btn btn-default" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">Gửi đi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- /.container --><hr>
+        <div style="clear: both"></div>
+        <div class="container" ng-include="'view/footer.html'">
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/angularShop.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+     
+    </body>
+
+</html>
