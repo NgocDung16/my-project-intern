@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-    <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
-        <title>Danh mục sản phẩm</title>
-
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
-        <!-- Custom CSS -->
-        <link href="css/shop-homepage.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-    </head>
-
-    <body ng-app="shopApp" ng-controller="shopController">
-        
-        <!-- Navigation -->
-        <div ng-include="'view/header.html'"></div>
         <!-- Page Content -->
         <div class="container">
             <div class="col-md-3 hidden-sm hidden-xs">
@@ -91,17 +66,17 @@
                     <div class="col-md-4 col-sm-6 col-xs-6" ng-repeat="p in products |  filter : test | limitTo: 21">
                         <div class="thumbnail">
                             <div class="detail-img">
-                                <img ng-src="{{p.imageUrl}}" alt="..." class="img-responsive" title="{{p.name}}">
+                                <img ng-src="{{p.imageUrl}}" alt="..." class="img-responsive" title="{{p.name}}" ui-sref="detail">
                             </div>
                             <div class="caption">
                                 <div class="name">
-                                    <a href="#">{{p.name}}</a>
+                                    <a ui-sref="detail">{{p.name}}</a>
                                 </div>
                                 <div class="price">
                                     <span class="old-price">{{p.old}}₫</span>
                                     <span class= "new-price">{{p.new}}₫</span>
                                 </div>
-                                <input type="button" name="" value="Xem chi tiết" class="muahang">
+                                <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                             </div>
                         </div>
                     </div>
@@ -116,24 +91,4 @@
 
             </div>
         </div>
-        <!-- /.container --><hr>
-        <div class="container" ng-include="'view/footer.html'">
-            <!-- Footer -->
-            
-
-        </div>
-        <!-- /.container -->
-
-        <!-- jQuery -->
-        
-        <!-- Bootstrap Core JavaScript -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/angular.js"></script>
-        <script type="text/javascript" src="js/angularShop.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow65.js"></script>
-        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
-    </body>
-
-</html>
+  

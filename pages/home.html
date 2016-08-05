@@ -41,7 +41,7 @@
     </div>
     <div class="col-md-9" >
         <div class="row">
-            <div class="title">
+            <div class="title" style="padding-top: 15px">
                 <h1>Sản phẩm mới </h1>
                 <a ui-sref="spmoi" title=""><h5>Xem thêm <!-- &nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i> --></h5></a>
             </div>
@@ -51,21 +51,38 @@
                 <div ng-repeat="p in products | filter : {id_category: 'spmoi'} | filter : test | limitTo: 3" class="col-md-4 col-sm-6 col-xs-6">
                     <div class="thumbnail">
                         <div class="detail-img">
-                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}">
+                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" ui-sref="detail">
                         </div>
                         <div class="caption">
                             <div class="name">
-                                <a href="#">{{ p.name }}</a>
+                                <a ui-sref="detail">{{ p.name }}</a>
                             </div>
                             <div class="price">
                                 <span class="old-price">{{ p.old }}₫</span>
                                 <span class= "new-price">{{ p.new }}₫</span>
                             </div>
-                            <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                         </div>
                     </div>
                 </div>
             </section>
+                <div class="col-md-4 col-sm-6 col-xs-6 display">
+                    <div class="thumbnail ">
+                        <div class="detail-img">
+                            <img src="images/a33.jpg" alt="..." class="img-responsive" ui-sref="detail">
+                        </div>
+                        <div class="caption">
+                            <div class="name">
+                                <a ui-sref="detail">Bộ bé gái (Hồng)</a>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">250.000₫</span>
+                                <span class= "new-price">200.000₫</span>
+                            </div>
+                            <input type="button" name="" value="Mua hàng" class="muahang" ui-sref="detail">
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="row">
             <div class="title">
@@ -78,21 +95,38 @@
                 <div ng-repeat="p in products | filter : {id_category: 'boy'} | filter : test | limitTo: 3" class="col-md-4 col-sm-6 col-xs-6">
                     <div class="thumbnail">
                         <div class="detail-img">
-                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}">
+                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}" ui-sref="detail">
                         </div>
                         <div class="caption">
                             <div class="name">
-                                <a href="#">{{ p.name }}</a>
+                                <a ui-sref="detail">{{ p.name }}</a>
                             </div>
                             <div class="price">
                                 <span class="old-price">{{ p.old }}₫</span>
                                 <span class= "new-price">{{ p.new }}₫</span>
                             </div>
-                            <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                         </div>
                     </div>
                 </div>
             </section>  
+                <div class="col-md-4 col-sm-6 col-xs-6 display">
+                    <div class="thumbnail ">
+                        <div class="detail-img">
+                            <img src="images/a33.jpg" alt="..." class="img-responsive" ui-sref="detail">
+                        </div>
+                        <div class="caption">
+                            <div class="name">
+                                <a ui-sref="detail">Thumbnail label</a>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">250.000₫</span>
+                                <span class= "new-price">200.000₫</span>
+                            </div>
+                            <input type="button" name="" value="Mua hàng" class="muahang" ui-sref="detail">
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="row">
             <div class="title">
@@ -105,21 +139,38 @@
                 <div ng-repeat="p in products | filter : 'girl' | filter : test | limitTo: 3" class="col-md-4 col-sm-6 col-xs-6">
                     <div class="thumbnail">
                         <div class="detail-img">
-                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}">
+                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}" ui-sref="detail">
                         </div>
                         <div class="caption">
                             <div class="name">
-                                <a href="#">{{ p.name }}</a>
+                                <a ui-sref="detail">{{ p.name }}</a>
                             </div>
                             <div class="price">
                                 <span class="old-price">{{ p.old }}₫</span>
                                 <span class= "new-price">{{ p.new }}₫</span>
                             </div>
-                            <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                         </div>
                     </div>
                 </div>
             </section>
+                <div class="col-md-4 col-sm-6 col-xs-6 display">
+                    <div class="thumbnail ">
+                        <div class="detail-img">
+                            <img src="images/a33.jpg" alt="..." class="img-responsive" ui-sref="detail">
+                        </div>
+                        <div class="caption">
+                            <div class="name">
+                                <a ui-sref="detail">Thumbnail label</a>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">250.000₫</span>
+                                <span class= "new-price">200.000₫</span>
+                            </div>
+                            <input type="button" name="" value="Mua hàng" class="muahang" ui-sref="detail">
+                        </div>
+                    </div>
+                </div>
         </div>
         <div class="row">
             <div class="title">
@@ -132,56 +183,73 @@
                 <div ng-repeat="p in products | filter : {id_category:'shoe'} | filter : test | limitTo: 3" class="col-md-4 col-sm-6 col-xs-6">
                     <div class="thumbnail">
                         <div class="detail-img">
-                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}">
+                            <img ng-src="{{ p.imageUrl }}" alt="..." class="img-responsive" title="{{p.name}}" ui-sref="detail">
                         </div>
                         <div class="caption">
                             <div class="name">
-                                <a href="#">{{ p.name }}</a>
+                                <a ui-sref="detail">{{ p.name }}</a>
                             </div>
                             <div class="price">
                                 <span class="old-price">{{ p.old }}₫</span>
                                 <span class= "new-price">{{ p.new }}₫</span>
                             </div>
-                            <input type="button" name="" value="Xem chi tiết" class="muahang">
+                            <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="col-md-4 col-sm-6 col-xs-6 display">
+                    <div class="thumbnail ">
+                        <div class="detail-img">
+                            <img src="images/a33.jpg" alt="..." class="img-responsive" ui-sref="detail">
+                        </div>
+                        <div class="caption">
+                            <div class="name">
+                                <a ui-sref="detail">Thumbnail label</a>
+                            </div>
+                            <div class="price">
+                                <span class="old-price">250.000₫</span>
+                                <span class= "new-price">200.000₫</span>
+                            </div>
+                            <input type="button" name="" value="Mua hàng" class="muahang" ui-sref="detail">
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
-	    $(document).on('ready', function() {
-	      $('.autoplay').slick({
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	        autoplay: true,
-	        autoplaySpeed: 2000,
-                responsive: [
-                    {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                      }
-                    },
-                    {
-                      breakpoint: 600,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                      }
-                    },
-                    {
-                      breakpoint: 480,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                      }
-                    }
-                ]
-	      });
-	    });
-        </script>
+    $(document).on('ready', function() {
+      $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            }
+        ]
+      });
+    });
+</script>

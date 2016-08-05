@@ -11,9 +11,9 @@
                      <div id="menu-wrapper">
                          <ul>
                              <li>
-                                 <a href="#">
+                                 <a ui-sref="order">
                                      <i class="fa fa-shopping-cart">
-                                     </i> Giỏ hàng <span>0</span>
+                                     </i> Giỏ hàng 
                                  </a>
                              </li>
                              <li>
@@ -55,28 +55,28 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav">
                     
-                     <li ng-repeat="menu in menus" class="{{menu.class}}" ng-class="{'active': menu.id == states.activeItem}" ng-click="states.activeItem=menu.id">
-                         <a ui-sref="{{menu.link}}" class="dropdown-toggle" role="button">{{menu.name}}</a>
+                    <li ng-repeat="menu in menus" class="{{menu.class}}" ng-class="{'active': menu.id == states.activeItem}" ng-click="states.activeItem=menu.id">
+                        <a ui-sref="{{menu.link}}" class="dropdown-toggle" role="button">{{menu.name}}</a>
                          <ul class="dropdown-menu">
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu1}}</a></li>
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu2}}</a></li>
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu3}}</a></li>
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu4}}</a></li>
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu5}}</a></li>
-                             <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu6}}</a></li>
-                         </ul>
-                     </li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu1}}</a></li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu2}}</a></li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu3}}</a></li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu4}}</a></li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu5}}</a></li>
+                            <li ng-repeat="sub in menu.branch"><a ui-sref="{{menu.link}}">{{sub.menu6}}</a></li>
+                        </ul>
+                    </li>
                     
-                     <li class="dropdown">
-                         <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-expanded="false">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1" aria-expanded="false">
                              <i class="fa fa-search" aria-hidden="true" style="font-size: 18px;"></i>
-                         </a>
-                         <div class="dropdown-menu search">
-                             <form action="" method="post" accept-charset="utf-8" >
+                        </a>
+                        <div class="dropdown-menu search">
+                            <form action="" method="post" accept-charset="utf-8" >
                                  <input type="text" name="" ng-change="checkFilter()" value="" placeholder="Bạn muốn tìm gì??" class="form-control" ng-model="productFilter">
-                             </form>
-                         </div>
-                     </li>
+                            </form>
+                        </div>
+                    </li>
                  </ul>
 
              </div>

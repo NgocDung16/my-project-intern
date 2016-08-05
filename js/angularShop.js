@@ -10,30 +10,30 @@
             size3: "L", 
             descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"
         },
-        {id: 2, id_category: "spmoi", name: "Giày Hello Kitty", old: "120000", new: "100000", imageUrl: "images/cc.jpg", imageUrlLarge: "images/zoom-cc.jpg", size1: "37", size2: "38", size3: "39", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Giày thể thao xuất khẩu---Bảo hành: 8 tháng"},
-        {id: 3, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", imageUrlLarge: "images/zoom-a33.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 5, id_category: "spmoisale", name: "Áo khoác ca rô", old: "250000", new: "200000", imageUrl: "images/ao2.jpg", imageUrlLarge: "images/zoom-ao.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1452M.768.RT---Thương hiệu: Áo bành..hihi---Bảo hành: 4 tháng"},
+        {id: 2, id_category: "spmoi", name: "Giày Hello Kitty", old: "120000", new: "100000", imageUrl: "images/cc.jpg", size1: "37", size2: "38", size3: "39", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Giày thể thao xuất khẩu---Bảo hành: 8 tháng"},
+        {id: 3, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 5, id_category: "spmoisale", name: "Áo khoác ca rô", old: "250000", new: "200000", imageUrl: "images/ao2.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1452M.768.RT---Thương hiệu: Áo bành..hihi---Bảo hành: 4 tháng"},
 //        {id: 6, id_category: "spmoi", name: "Giày thể thao YTH", old: "170000", new: "150000", imageUrl: "images/cc.jpg", imageUrlLarge: "images/zoom-cc.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 7, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", imageUrlLarge: "images/zoom-a33.jpg", size1: "S", size2: "M", size3: "XL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 8, id_category: "boy", name: "Bộ bé trai TR03", old: "90000", new: "80000", imageUrl: "images/bo.jpg", imageUrlLarge: "images/zoom-bo.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 3 tháng"},
-        {id: 9, id_category: "boy", name: "Quần Jean đùi TR06", old: "90000", new: "80000", imageUrl: "images/jean-boy.jpg", imageUrlLarge: "images/zoom-bo4.jpg", size1: "S", size2: "M", size3: "XXL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 10, id_category: "boysale", name: "Áo thun bé trai", old: "90000", new: "80000", imageUrl: "images/sirtboy.jpg", imageUrlLarge: "images/zoom-bo3.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 5 tháng"},
-        {id: 11, id_category: "girl", name: "váy voan Thái Lan", old: "250000", new: "200000", imageUrl: "images/v22.jpg", imageUrlLarge: "images/zoom-v23.jpg", size1: "M", size2: "L", size3: "XL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 12, id_category: "girl", name: "Váy tầng V30", old: "230000", new: "185000", imageUrl: "images/v29.jpg", imageUrlLarge: "images/zoom-v29.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 8 tháng"},
-        {id: 13, id_category: "girlsale", name: "Váy bé gái cộc tay", old: "250000", new: "170000", imageUrl: "images/v25.jpg", imageUrlLarge: "images/zoom-v30.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 14, id_category: "shoe", name: "SỤC SIÊU NHẸ HELLO KITTY", old: "160000", new: "130000", imageUrl: "images/shoe3.jpg", imageUrlLarge: "images/zoom-bbb.jpg", size1: "29", size2: "32", size3: "40", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 9 tháng"},
-        {id: 15, id_category: "shoe", name: "Giày thể thao Nike", old: "270000", new: "240000", imageUrl: "images/bb.jpg", imageUrlLarge: "images/zoom-bb.jpg", size1: "27", size2: "28", size3: "29", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 16, id_category: "shoe", name: "Xăng đan Hàn Quốc", old: "160000", new: "130000", imageUrl: "images/shoe2.jpg", imageUrlLarge: "images/zoom-b.jpg", size1: "30", size2: "31", size3: "32", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 6 tháng"},
-        {id: 17, id_category: "boy", name: "Bộ bé trai TR03", old: "90000", new: "80000", imageUrl: "images/bo2.jpg", imageUrlLarge: "images/zoom-bo.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 6 tháng"},
-        {id: 18, id_category: "boysale", name: "Bộ bé trai TR06", old: "90000", new: "80000", imageUrl: "images/bo3.jpg", imageUrlLarge: "images/zoom-bo4.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 19, id_category: "boy", name: "Bộ bé trai TR04", old: "90000", new: "80000", imageUrl: "images/bo4.jpg", imageUrlLarge: "images/zoom-bo3.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 20, id_category: "girl", name: "Váy hoa đào V23", old: "250000", new: "200000", imageUrl: "images/v23.jpg", imageUrlLarge: "images/zoom-v23.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 21, id_category: "girl", name: "Váy công chúa", old: "230000", new: "185000", imageUrl: "images/v26.jpg", imageUrlLarge: "images/zoom-v29.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 22, id_category: "girlsale", name: "Váy đỏ chấm bi V29", old: "250000", new: "170000", imageUrl: "images/v30.jpg", imageUrlLarge: "images/zoom-v30.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 23, id_category: "shoe", name: "Bata Đỏ", old: "160000", new: "130000", imageUrl: "images/bbb.jpg", imageUrlLarge: "images/zoom-bbb.jpg", size1: "36", size2: "37", size3: "38", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 24, id_category: "shoe", name: "Sục Hello Kitty siêu nhẹ ", old: "270000", new: "240000", imageUrl: "images/shoe1.jpg", imageUrlLarge: "images/zoom-bb.jpg", size1: "35", size2: "36", size3: "37", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 25, id_category: "shoe", name: "Bata trắng", old: "160000", new: "130000", imageUrl: "images/b.jpg", imageUrlLarge: "images/zoom-b.jpg", size1: "27", size2: "28", size3: "29", descripttion: "Mã code: 1352M.358.DE---Thương hiệu: Giày chợ---Bảo hành: 12 tháng"},
-        {id: 26, id_category: "spmoi", name: "Áo khoác cà rốt", old: "250000", new: "200000", imageUrl: "images/ao.jpg", imageUrlLarge: "images/zoom-ao.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 7, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", size1: "S", size2: "M", size3: "XL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 8, id_category: "boy", name: "Bộ bé trai TR03", old: "90000", new: "80000", imageUrl: "images/bo.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 3 tháng"},
+        {id: 9, id_category: "boy", name: "Quần Jean đùi TR06", old: "90000", new: "80000", imageUrl: "images/jean-boy.jpg", size1: "S", size2: "M", size3: "XXL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 10, id_category: "boysale", name: "Áo thun bé trai", old: "90000", new: "80000", imageUrl: "images/sirtboy.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 5 tháng"},
+        {id: 11, id_category: "girl", name: "váy voan Thái Lan", old: "250000", new: "200000", imageUrl: "images/v22.jpg", size1: "M", size2: "L", size3: "XL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 12, id_category: "girl", name: "Váy tầng V30", old: "230000", new: "185000", imageUrl: "images/v29.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 8 tháng"},
+        {id: 13, id_category: "girlsale", name: "Váy bé gái cộc tay", old: "250000", new: "170000", imageUrl: "images/v25.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 14, id_category: "shoe", name: "SỤC SIÊU NHẸ HELLO KITTY", old: "160000", new: "130000", imageUrl: "images/shoe3.jpg", size1: "29", size2: "32", size3: "40", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 9 tháng"},
+        {id: 15, id_category: "shoe", name: "Giày thể thao Nike", old: "270000", new: "240000", imageUrl: "images/bb.jpg", size1: "27", size2: "28", size3: "29", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 16, id_category: "shoe", name: "Xăng đan Hàn Quốc", old: "160000", new: "130000", imageUrl: "images/shoe2.jpg", size1: "30", size2: "31", size3: "32", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 6 tháng"},
+        {id: 17, id_category: "boy", name: "Bộ bé trai TR03", old: "90000", new: "80000", imageUrl: "images/bo2.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 6 tháng"},
+        {id: 18, id_category: "boysale", name: "Bộ bé trai TR06", old: "90000", new: "80000", imageUrl: "images/bo3.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 19, id_category: "boy", name: "Bộ bé trai TR04", old: "90000", new: "80000", imageUrl: "images/bo4.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 20, id_category: "girl", name: "Váy hoa đào V23", old: "250000", new: "200000", imageUrl: "images/v23.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 21, id_category: "girl", name: "Váy công chúa", old: "230000", new: "185000", imageUrl: "images/v26.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 22, id_category: "girlsale", name: "Váy xòe tuyết trắng", old: "250000", new: "170000", imageUrl: "images/detail.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 23, id_category: "shoe", name: "Bata Đỏ", old: "160000", new: "130000", imageUrl: "images/bbb.jpg", size1: "36", size2: "37", size3: "38", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 24, id_category: "shoe", name: "Sục Hello Kitty siêu nhẹ ", old: "270000", new: "240000", imageUrl: "images/shoe1.jpg", size1: "35", size2: "36", size3: "37", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 25, id_category: "shoe", name: "Bata trắng", old: "160000", new: "130000", imageUrl: "images/b.jpg", size1: "27", size2: "28", size3: "29", descripttion: "Mã code: 1352M.358.DE---Thương hiệu: Giày chợ---Bảo hành: 12 tháng"},
+        {id: 26, id_category: "spmoi", name: "Áo khoác cà rốt", old: "250000", new: "200000", imageUrl: "images/ao.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 27, id_category: "child", name: "Bao tay Thái Lan 164C", old: "30000", new: "28000", imageUrl: "images/baotay.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Bao tay comfort Thái Lan 164C----Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 28, id_category: "child", name: "Bộ body Thái Lan", old: "240000", new: "209000", imageUrl: "images/body.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Bộ body Thái Lan---Mã code: 1352M.358.DE---Thương hiệu: Giày chợ---Bảo hành: 12 tháng"},
         {id: 29, id_category: "childsale", name: "Bao chân First-wear", old: "50000", new: "32000", imageUrl: "images/baochan.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Bao chân First-wear---Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
@@ -68,7 +68,7 @@
         {id: "item3", class: "dropdown", name: "Trang phục bé trai", link: "boy",
             branch:
                 [{
-                    menu1: "Áo sơ mi dài tay",
+                    menu1: "Áo sơ mi dài tay", 
                     menu2: "Áo thun", 
                     menu3: "Quần jean",
                     menu4: "Bộ bé trai",
@@ -92,7 +92,8 @@
                 menu2: "Giày sanda", 
                 menu3: "Giày Boot",
                 menu4: "Giày búp bê",
-                menu5: "Giày thể thao"
+                menu5: "Giày thể thao",
+                menu6: "Giày mọi"
             }]
         },
         {id: "item6", class: "dropdown",name: "Phụ kiện", link: "phukien",
@@ -100,10 +101,12 @@
                 menu1: "Ba lô", 
                 menu2: "Nón", 
                 menu3: "Đồng hồ",
-                menu4: "Kẹp tóc"
+                menu4: "Kẹp tóc",
+                menu5: "Băng đô",
+                menu6: "Bờm nhựa"
             }]
         },
-        {id: "item7", class: "hidden-sm",name: "Khuyến mãi", link: "sale"},
+        {id: "item7", class: "hidden-md hidden-sm",name: "Khuyến mãi", link: "sale"},
         {id: "item8", class: "hidden-sm", name: "Tin tức", link: "new"},
         {id: "item9", class: "hidden-sm", name: "Liên hệ", link: "contact"},
     ];
@@ -217,20 +220,38 @@
             url: "/shoe",
             templateUrl: "pages/shoe.html"
         })
+        .state('detail', {
+            url: "/detail",
+            templateUrl: "pages/detail.html"
+        })
+        .state('order', {
+            url: "/order",
+            templateUrl: "pages/order.html"
+        })
     })
 
     
     function shopController($scope,$rootScope){
         // Dùng để hiển thị sản phẩm ra
         $scope.products = products;
+        //menu active
         $scope.states = {};
         $scope.states.activeItem = 'item1';
+        //end
         $scope.items = items;
         $scope.menus = menus;
         $scope.news = news;
         $scope.colors = colors;
         $scope.size = size;
-        $scope.prices = prices;     
+        $scope.prices = prices; 
+        
+        
+        $scope.activeTab=1;
+        $scope.changeData= function(key){
+            $scope.activeTab=key;
+        }
+        
+        
         //Validate data
         $scope.success=false;
         $scope.register = function(){
@@ -250,6 +271,4 @@
         $scope.checkFilter = function(){
             $rootScope.$emit('dataFilter',$scope.productFilter) //truyen data cho controller khac
         }
-        
-        
     }

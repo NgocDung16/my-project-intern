@@ -65,17 +65,17 @@
             <div class="col-md-4 col-sm-6 col-xs-6" ng-repeat="p in products |  filter : test| filter : {id_category: 'pk'}">
                 <div class="thumbnail">
                     <div class="detail-img">
-                        <img ng-src="{{p.imageUrl}}" alt="..." class="img-responsive" title="{{p.name}}">
+                        <img ng-src="{{p.imageUrl}}" alt="..." class="img-responsive" title="{{p.name}}" ui-sref="detail">
                     </div>
                     <div class="caption">
                         <div class="name">
-                            <a href="#">{{p.name}}</a>
+                            <a ui-sref="detail">{{p.name}}</a>
                         </div>
                         <div class="price">
                             <span class="old-price">{{p.old}}₫</span>
                             <span class= "new-price">{{p.new}}₫</span>
                         </div>
-                        <input type="button" name="" value="Xem chi tiết" class="muahang">
+                        <input type="button" name="" value="Xem chi tiết" class="muahang" ui-sref="detail">
                     </div>
                 </div>
             </div>

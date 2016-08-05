@@ -199,7 +199,7 @@ img {
 }
 .list-group .item {
   padding-bottom: 20px;
-  margin-top: 28px;
+  margin-top: 17px;
 }
 .list-group .item .active {
   border: solid 1px #7cc4e2;
@@ -309,6 +309,11 @@ footer .menu ul li {
 }
 /*end footer*/
 /*responsive*/
+@media (max-width: 1200px) and (min-width: 1024px){
+    .menu-display{
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
   .navbar-right {
     display: none;
@@ -392,7 +397,7 @@ footer .menu ul li {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 8px;
-  color: #777;
+  color: #343131;
   margin-top: -7px;
 }
 .detail .infor {
@@ -412,7 +417,7 @@ footer .menu ul li {
   padding-left: 35px;
 }
  .choose {
-  color: #777;
+  color: #343131;
   text-transform: none;
 }
  .choose h2 {
@@ -499,7 +504,7 @@ footer .menu ul li {
 .more input {
   padding: 7px 25px;
   border: 0;
-  background: #777;
+  background: #343131;
   color: #fff;
   text-transform: uppercase;
 }
@@ -524,7 +529,7 @@ footer .menu ul li {
     padding: 7px 25px;
     border: 0;
     border-radius: 0;
-    background: #777;
+    background: #343131;
     color: #fff;
     text-transform: uppercase;
 }
@@ -564,5 +569,72 @@ footer .menu ul li {
 }
 .introduce p span{
     color: #7cc4e2;
+}
+/*end*/
+/*orrder*/
+.order {
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+.order .title h2 {
+  text-align: left;
+  font-size: 20px;
+}
+.order img {
+  width: 40%;
+}
+.order #img {
+  width: 40%;
+}
+.order input {
+  width: 40%;
+  padding: 5px 0px;
+  border: solid 1px #e6e6e6;
+}
+.order tr td{
+    width: 15%;
+}
+.order table th{
+    text-align: center;
+}
+.order tr td a {
+  color: #111;
+}
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{ vertical-align: middle;}
+.order a:hover {
+  color: #7cc4e2;
+}
+.order .price {
+  font-weight: bold;
+}
+.order .fa-trash {
+  font-size: 24px;
+}
+.order .order-bottom {
+  text-align: left;
+}
+.order .order-bottom .product_wrapper {
+  padding-bottom: 10px;
+}
+.order .order-bottom button {
+  background-color: #343131;
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 0px;
+  text-transform: uppercase;
+}
+.order .order-bottom button:hover {
+  background-color: #7cc4e2;
+  transition-property: none;
+}
+.order .order-bottom .total  {
+  font-size: 18px;
+  text-align: left;
+  padding-top: 40px;
 }
 /*end*/

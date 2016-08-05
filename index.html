@@ -20,6 +20,9 @@
         <link href="css/shop-homepage.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="css/slide.css" />
+        <!-- End WOWSlider.com HEAD section -->
     </head>
 
     <body ng-app="shopApp" ng-controller="shopController">
@@ -44,42 +47,10 @@
         <!--<script type="text/javascript" src="script.js"></script>-->
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-        <script type="text/javascript">
-	    $(document).on('ready', function() {
-	      $('.autoplay').slick({
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-	        autoplay: true,
-	        autoplaySpeed: 2000,
-                responsive: [
-                    {
-                      breakpoint: 1024,
-                      settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                      }
-                    },
-                    {
-                      breakpoint: 600,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                      }
-                    },
-                    {
-                      breakpoint: 480,
-                      settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                      }
-                    }
-                ]
-	      });
-	    });
-        </script>
+        
+       <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow65.js"></script>
+        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+       
         <script>
             window.fbAsyncInit = function () {
                 FB.init({
@@ -100,8 +71,6 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-        <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow65.js"></script>
-        <noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
-    </body>
+       </body>
 
 </html>
