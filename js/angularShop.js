@@ -1,10 +1,9 @@
-    // Khởi tạo mảng dữ liệu sản phẩm mới
+//    // Khởi tạo mảng dữ liệu sản phẩm mới
     var products = [
         {
             id: 1, id_category: "spmoi", 
             name: "Áo khoác cà rốt", old: "250000", 
             new: "200000", imageUrl: "images/ao.jpg", 
-            imageUrlLarge: "images/zoom-ao.jpg", 
             size1: "S", 
             size2: "M", 
             size3: "L", 
@@ -13,7 +12,7 @@
         {id: 2, id_category: "spmoi", name: "Giày Hello Kitty", old: "120000", new: "100000", imageUrl: "images/cc.jpg", size1: "37", size2: "38", size3: "39", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Giày thể thao xuất khẩu---Bảo hành: 8 tháng"},
         {id: 3, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 5, id_category: "spmoisale", name: "Áo khoác ca rô", old: "250000", new: "200000", imageUrl: "images/ao2.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1452M.768.RT---Thương hiệu: Áo bành..hihi---Bảo hành: 4 tháng"},
-//        {id: 6, id_category: "spmoi", name: "Giày thể thao YTH", old: "170000", new: "150000", imageUrl: "images/cc.jpg", imageUrlLarge: "images/zoom-cc.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 6, id_category: "girl", name: "Giày thể thao YTH", old: "170000", new: "150000", imageUrl: "images/cc.jpg", imageUrlLarge: "images/zoom-cc.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 7, id_category: "spmoi", name: "Bộ bé gái (hồng)", old: "90000", new: "70000", imageUrl: "images/a33.jpg", size1: "S", size2: "M", size3: "XL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 8, id_category: "boy", name: "Bộ bé trai TR03", old: "90000", new: "80000", imageUrl: "images/bo.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 3 tháng"},
         {id: 9, id_category: "boy", name: "Quần Jean đùi TR06", old: "90000", new: "80000", imageUrl: "images/jean-boy.jpg", size1: "S", size2: "M", size3: "XXL", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
@@ -28,8 +27,8 @@
         {id: 18, id_category: "boysale", name: "Bộ bé trai TR06", old: "90000", new: "80000", imageUrl: "images/bo3.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 19, id_category: "boy", name: "Bộ bé trai TR04", old: "90000", new: "80000", imageUrl: "images/bo4.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 20, id_category: "girl", name: "Váy hoa đào V23", old: "250000", new: "200000", imageUrl: "images/v23.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 21, id_category: "girl", name: "Váy công chúa", old: "230000", new: "185000", imageUrl: "images/v26.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
-        {id: 22, id_category: "girlsale", name: "Váy xòe tuyết trắng", old: "250000", new: "170000", imageUrl: "images/detail.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 21, id_category: "girlsale", name: "Váy công chúa", old: "230000", new: "185000", imageUrl: "images/v26.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
+        {id: 22, id_category: "", name: "Váy xòe tuyết trắng", old: "250000", new: "170000", imageUrl: "images/detail.jpg", size1: "S", size2: "M", size3: "L", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 23, id_category: "shoe", name: "Bata Đỏ", old: "160000", new: "130000", imageUrl: "images/bbb.jpg", size1: "36", size2: "37", size3: "38", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 24, id_category: "shoe", name: "Sục Hello Kitty siêu nhẹ ", old: "270000", new: "240000", imageUrl: "images/shoe1.jpg", size1: "35", size2: "36", size3: "37", descripttion: "Mã code: 1222M.768.DE---Thương hiệu: Mango---Bảo hành: 4 tháng"},
         {id: 25, id_category: "shoe", name: "Bata trắng", old: "160000", new: "130000", imageUrl: "images/b.jpg", size1: "27", size2: "28", size3: "29", descripttion: "Mã code: 1352M.358.DE---Thương hiệu: Giày chợ---Bảo hành: 12 tháng"},
@@ -160,25 +159,37 @@
         {prices: " 200000₫ - 300000₫"},
         {prices: " 300000₫ - 400000₫"},
         {prices: " 400000₫ - 500000₫"},
-        {prices: " > 500000₫"},
+        {prices: " > 500000₫"}
     ];
     
     var ShopApp = angular.module("shopApp", ["ui.router"]);
-    ShopApp.controller("shopController", shopController );
+    
+//    ShopApp.controller("shopController",transferdata);
+//    function transferdata($scope, $http){
+//        $http.get('../HTML5Application/database/products.json').
+//            success(function(data) {
+//                console.log(data);
+//                $scope.products = data;
+//            });
+//    };
     ShopApp.config(function($stateProvider, $urlRouterProvider){
       
       // For any unmatched url, send to /route1
-      $urlRouterProvider.otherwise("/index")
+      $urlRouterProvider.otherwise("/index");
       
       $stateProvider
         .state('index', {
             url: "/index",
             templateUrl: "pages/home.html"
         })
-       
+        
         .state('intro', {
             url: "/intro",
             templateUrl: "pages/intro.html"
+        })
+        .state('pay', {
+            url: "/pay",
+            templateUrl: "pages/pay.html"
         })
         .state('sale', {
             url: "/sale",
@@ -227,10 +238,9 @@
         .state('order', {
             url: "/order",
             templateUrl: "pages/order.html"
-        })
-    })
-
-    
+        });
+    });
+    ShopApp.controller("shopController", shopController );
     function shopController($scope,$rootScope){
         // Dùng để hiển thị sản phẩm ra
         $scope.products = products;
@@ -249,20 +259,20 @@
         $scope.activeTab=1;
         $scope.changeData= function(key){
             $scope.activeTab=key;
-        }
+        };
         
         
         //Validate data
         $scope.success=false;
         $scope.register = function(){
             $scope.success=true;
-        }    
+        }  ;  
         //Truyen du lieu giua hai bien
         $scope.test = '';
         var test = $rootScope.$on('dataFilter',function(e,value){//nhan du lieu tu controller duoi   
             $scope.test = value;
 //            console.log(value);
-        })
+        });
         $scope.$on('destroy',test);  
     }
     ShopApp.controller("headerController", headerController );
@@ -270,5 +280,44 @@
         $scope.productFilter = '';
         $scope.checkFilter = function(){
             $rootScope.$emit('dataFilter',$scope.productFilter) //truyen data cho controller khac
-        }
+        };
     }
+    
+    
+    function check(form) { 
+        var link = '../HTML5Application/database/user.json';
+        $.ajax({
+            url: link,
+            type: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                    $.each(data.user, function(index, item) {
+                        if((form.username.value == item.username && form.password.value == item.password)){
+//                                    alert("Đăng nhập thành công");
+                            window.location = 'index.html';
+                        }
+                        else {
+//                                    alert("Sai tên đăng nhập hoặc mật khẩu")
+                        }
+                        console.log(form.username.value + '-----' + item.username);
+                        console.log(form.password.value + '-----' + item.password);
+                    });
+            }  
+        });
+    }
+  
+//    $( document ).ready(function() {
+//        // API
+//        var link = '../HTML5Application/database/products.json';
+//        $.ajax({
+//            url: link,
+//            type: 'GET',
+//            dataType: 'json',
+//            success: function(data) {
+//                $.each(data.products, function(index, item) {
+//                    console.log(item.id + "----"+ item.name);
+//                });
+//            }
+//        });
+//    });
+ 

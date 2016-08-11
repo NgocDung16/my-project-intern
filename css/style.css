@@ -638,3 +638,59 @@ footer .menu ul li {
   padding-top: 40px;
 }
 /*end*/
+/*payment*/
+.payment{
+    padding-bottom: 30px;
+}
+.payment .more {
+  font-size: 15px;
+  text-align: left;
+}
+.payment h2{
+    font-size: 20px;
+}
+.payment form {
+  padding-top: 10px;
+}
+.payment input {
+  margin-top: 20px;
+  width: 70%;
+}
+.payment form select{
+    width: 70%;
+}
+.payment .summary-body {
+  border: 1px solid #e1e1e1;
+  padding-left: 15px;
+  text-align: center;
+}
+.payment .summary-body img {
+  width: 25%;
+}
+.payment .summary-body .product {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+}
+.payment .total-line {
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+.payment .total-line .price {
+  color: #8fc243;
+  font-weight: bold;
+}
+.payment .total-line-name {
+  font-size: 17px;
+}
+.payment button {
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.payment button:hover {
+  color: #fff;
+}
+
+/*end*/
